@@ -1,0 +1,2142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ESTILOS HEADER */
+nav{
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+li a.active, li a:hover{
+    background: #000090;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .enlace img {
+        width:83px;
+        height: 60.61px;
+       margin:10px 5px;
+    }
+    .checkbtn img {
+        width: 24px;
+        height: 24px;
+        margin-top: 50px;
+
+    }
+    
+    nav ul{
+        z-index: 999;
+        position: fixed;
+        width: 200px;
+        height: 352px;
+        background: linear-gradient(0deg, #F5F5F5, #F5F5F5), #FFFBFE;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        top: 90px;
+        right: -150%;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: -13px; 
+        margin-left: -25px;
+
+    }
+    
+    nav ul li a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            color: #1C1B1F;
+    }
+    
+    li a:hover, li a.active{
+        background: none;
+        color: 
+        rgba(242, 166, 84, 1);
+    }
+    #check:checked ~ ul{
+        right:-30px;
+    }
+    .headerAbout nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .headerAbout nav .checkbtn {
+        margin-left: 90%;
+    }
+
+    .headerAbout nav ul {
+        top:150px;
+        z-index: 999;
+    }
+    
+    .headerAbout nav .enlace img  {
+        margin-top: 100px; 
+        width: 106.81px;
+        height:78px;
+    }
+}
+
+
+/* ESTILOS INDEX */
+
+
+.heroImageIndex {
+    background-image: url(../images/hero_image_index.png);
+    display: flex;
+    flex-direction: column;
+    height: 844px;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    
+}
+
+.heroImageIndex .titleTextIndex {
+margin-top:50%;
+color: #000000;
+}
+
+.heroImageIndex .titleTextIndex .firstTitleIndex {
+    font-size: 34px;
+    font-weight: 700;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+
+}
+
+.heroImageIndex .titleTextIndex .textIndex {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.heroImageIndex .btnIndexDiv {
+    position: relative;
+    height: 500%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnIndexDiv .btnOrderIndex {
+    height: 44px;
+    width: 143px;
+    padding: 0px;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-width: 0px;
+    background: #FFAA88;
+    border-radius: 100px;
+}
+
+.heroImageIndex .btnIndexDiv .btnOrderIndex a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.secondSectionindex {
+    overflow: hidden;
+    padding-top: 32px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDF9F7;
+}
+
+.secondSectionindex .logoIndex {
+    width: 106.81px;
+    height: 78px;
+}
+
+.secondSectionindex .secondTitleIndex {
+    width: 100%;
+    padding:0 10px;
+    height: 36px;
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionindex .iconGlutenFreeIndex {
+    background: url(../images/img_gluten_free_two.png);
+    margin-top: 64px;
+    width: 60px;
+    height: 60px;
+    border-radius: 47px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondSectionindex .textGlutenFreeIndex {
+    width: 100%;
+    padding:0 10px;
+    height: 24px;
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionindex .iconCalidadIndex {
+    background: url(../images/image_icon_quality_two.png);
+    width: 65px;
+    height: 65px;
+    margin-top: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondSectionindex .textCalidadIndex {
+    width: 100%;
+    padding:0 10px;
+    height: 24px;
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionindex .textSecondIndex {
+    width: 100%;
+    padding:0 10px;
+    height: 96px;
+    margin-top: 64px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionindex .circleIndex {
+    margin-top: 33px;
+    background-image: url(../images/eclipse_orange_index.png);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+
+.secondSectionindex .circleIndex .btnMoreIndex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 152px;
+    height: 44px;
+    background-color: rgba(255, 170, 136, 1);
+    border-radius: 100px;
+    border-width: 0px;
+    margin-top: 55px;
+    margin-bottom: 46px;
+}
+
+
+.secondSectionindex .circleIndex .btnMoreIndex a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.thirdSectionIndex {
+    padding-top: 32px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    /* align-items: center; */
+    background: #FDF9F7;
+}
+
+/* Carrusel 1 */
+.indexCarouselLine {
+    display: flex;
+    flex-direction: column;
+  /*   align-items: center; */
+    justify-content: center;
+    
+    
+}
+.thirdSectionIndex .thirdTitleIndex { 
+    width: 100%;
+    padding:0 10px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+   
+} 
+
+.slider {
+    margin-top: 48px;
+    z-index: 100;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow:scroll;
+    
+    
+}
+.rectangleCarouselOne {
+    margin-top: 40px;
+    position: absolute;
+}
+
+.elemento {
+	flex: 1 0 auto;
+	margin: 0 15px;
+	width: 160px;
+	height: 160px;
+}
+.carousel1P{
+    font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 15px;
+color: #2F2F2F;
+    text-align: center;
+    margin-top:5px;
+}
+.btnVerMasIndexDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+}
+.btnVerMasIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+padding: 0px;
+gap: 8px;
+border-width: 0;
+width: 116px;
+height: 44px;
+background: #F2A654;
+border-radius: 100px;
+}
+
+.btnVerMasIndex a {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #050505;
+}
+
+/* Carrusel 2 */
+.fourthTitleIndex {
+    width: 100%;
+    padding:0 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    margin-top:32px;
+    text-align: center;
+    color: #2F2F2F;
+     
+}
+
+.indexCarouselLineTwo {
+    display: flex;
+    flex-direction: column;
+  /*   align-items: center; */
+    justify-content: center;
+    margin-bottom:20px;
+}
+
+.sliderTwo {
+    margin-top: 48px;
+    z-index: 100;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow:scroll;
+    padding-bottom: 30px;
+}
+
+.rectangleCarouselTwo {
+    margin-top: 40px;
+    position: absolute;
+}
+
+.elementoTwo {
+    background-image: url(../images/Vector_carrusel2.png);
+	flex: 1 0 auto;
+	margin: 0 10px;
+	width: 171px;
+	height: 192px;
+    box-shadow: 1px 6px 5px -1px rgba(122, 115, 115, 0.82);
+    -webkit-box-shadow: 1px 6px 5px -1px rgba(122, 115, 115, 0.82);
+    -moz-box-shadow: 1px 6px 5px -1px rgba(122, 115, 115, 0.82);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+   
+    
+}
+
+.elementoTwo p {
+    margin: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #2F2F2F;
+}
+
+.thirdSectionIndex footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.thirdSectionIndex footer .footerIcons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-bottom: 37px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.thirdSectionIndex footer .footerTitle {
+    width: 100%;
+    padding:0 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.iconFacebook {
+    background-image: url(../images/Icon_facebook.png);
+    width: 26px;
+    height: 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.iconInstagram {
+    background-image: url(../images/Icon\ _instagram.png);
+    width: 26px;
+    height: 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.iconWhatsapp {
+    background-image: url(../images/Icon_whatsapp.png);
+    width: 26px;
+    height: 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* @media (min-width: 391px) {
+    .rectangleCarouselOne {
+        display: none;
+    }
+
+    .rectangleCarouselTwo {
+        display: none;
+    }
+} */
+
+/* ESTILOS ABOUT */
+
+.firstSectionAbout {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.firstSectionAbout main .heroImageAbout {
+    margin-top:20px;
+    background-image:url(../images/rectangle_index_carousel2.png); 
+    background-size: cover; 
+    background-position:center; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin-bottom:-60px;
+}
+
+.firstSectionAbout main .heroImageAbout .imgPanUno {
+  margin-top: 70px;
+  margin-bottom: 70px;
+    padding: 10px; 
+}
+
+
+
+.firstSectionAbout main .divParAbout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDF9F7;
+    margin-top: 48px;
+}
+
+.firstSectionAbout main .divParAbout .paragraphAbout {
+    width: 95%;
+    height: 399px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.secondSectionAbout {
+    padding-top: 32px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDF9F7;
+    overflow: hidden;
+}
+
+.secondSectionAbout .titleMision {
+    width: 82px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.secondSectionAbout .secondParagraphAbout {
+    margin-top: 32px;
+    width: 95%;
+    height: 63px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+
+.secondSectionAbout .heroImageAboutTwo {
+    margin-top:-40px;
+    background-image:url(../images/rectangle_index_carousel2.png); 
+    background-size: cover; 
+    background-position:center; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin-bottom:-60px;
+}
+
+.secondSectionAbout .heroImageAboutTwo .imgPanTwo {
+  margin-top: 70px;
+  margin-bottom: 70px;
+    padding: 10px; 
+}
+
+
+
+.secondSectionAbout .titleValores {
+    width: 95px;
+    height: 36px;
+    margin-top: 48px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+}
+
+.secondSectionAbout .listRow {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 53px;
+}
+
+.secondSectionAbout .listRow div h3 {
+    height: 21px;
+    top: 526px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.secondSectionAbout .thirdParagraphAbout {
+    width: 95%;
+    height: 168px;
+    margin-top: 48px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.secondSectionAbout .medialunaAbout {
+    background-image: url(../images/eclipse_orange_index.png);
+    width: 100%;
+    height: 50px;
+    margin-top: 18px;
+    background-size: cover;
+    position: relative;
+}
+
+/* @media (min-width: 395px) {
+    .firstSectionAbout main .heroImageAbout .diagonalDelAboutOne {
+        display: none;
+    }
+
+    .firstSectionAbout main .heroImageAbout .imgPanUno {
+        margin: 50px;
+    }
+
+    .secondSectionAbout .heroImageAboutTwo .diagonalDelAboutTwo {
+        display: none;
+    }
+
+    .secondSectionAbout .heroImageAboutTwo .imgPanTwo {
+        margin: 50px;
+
+    }
+} */
+
+/* ESTILOS CONTACT */
+
+.headerContact {
+    background: #FDF9F7;
+}
+
+.mainContact {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FDF9F7;
+    overflow: hidden;
+}
+
+.mainContact main .titleContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContact main .titleContact .diagonalDelContact {
+    position: relative;
+    width: 917.48px;
+    height: 100.65px;
+    top: 10px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+    border-radius: 26px;
+    transform: rotate(-6.76deg);
+    color: #FFB3CE 36% #FFE3B3 36%;
+}
+
+.mainContact main .titleContact .h1TitleContact {
+    z-index: 10;
+    margin-top: -75px;
+    width: 116px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.mainContact main .titleContact p {
+    width: 226px;
+    height: 24px;
+    top: 159px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (min-width: 800px) {
+    .mainContact main .titleContact .diagonalDelContact {
+        display: none;
+    }
+
+    .mainContact main .titleContact .h1TitleContact {
+        margin-top: 20px;
+    }
+
+}
+
+.mainContact main .formularioContact form .formFieldset {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.mainContact main .formularioContact form .formFieldset fieldset input {
+    border: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #1C1B1F;
+    background: #FDF9F7;
+    height: 30px;
+    padding-bottom: 20px;
+}
+
+.mainContact main .formularioContact form .formFieldset fieldset legend {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+}
+
+.mainContact main .formularioContact form div fieldset textarea {
+    height: 120px;
+    border: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #1C1B1F;
+    resize: none;
+    background: #FDF9F7;
+}
+
+.mainContact main .formularioContact form .formFieldset .divDelButtonDelFormulario {
+    position: relative;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContact main .formularioContact form .formFieldset .divDelButtonDelFormulario .buttonDelformulario1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 105.86px;
+    height: 40px;
+    background: #F2A654;
+    border-radius: 100px;
+    border-width: 0;
+}
+
+.mainContact main .formularioContact form .formFieldset .divDelButtonDelFormulario .buttonDelformulario1 a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #050505;
+}
+
+.mainContact main .divContactIformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 8px 8px;
+    border: 1px solid black;
+    background-color: #FFAA88;
+    text-align: center;
+}
+
+.mainContact main .divContactIformation .pContactInformation {
+    font-style: normal;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+/* ESTILOS HOW */
+
+.headerHow {
+    background: #FDF9F7;
+}
+
+.mainHow {
+    padding-top: 32px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FDF9F7;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+
+.mainHow .mainComoLoHacemostitle {
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.mainHow .twitterVerifiedBadge {
+    width: 60px;
+    height: 60px;
+    margin-top: 32px;
+}
+
+.mainHow .textosDehow {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 16px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.mainHow .glutenImageshow {
+    width: 62px;
+    height: 65px;
+    margin-top: 32px;
+}
+
+.mainHow .textoDeHow1 {
+    margin-top: 21px;
+    width: 100%;
+    padding: 0 10px;
+    height: 96px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.mainHow .casaDeGluten {
+    width: 67.5px;
+    height: 60px;
+    margin-top: 32px;
+}
+
+.mainHow .textoHow2 {
+    margin-top: 16px;
+    width: 100%;
+    padding: 0 10px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.mainHow .eclipseOrder {
+    background-image: url(../images/eclipse_orange_index.png);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* margin-top:33px; */
+}
+
+
+.mainHow .eclipseOrder .divDelButtonDeHow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 143px;
+    height: 44px;
+    position: relative;
+    background: #F2A654;
+    border-radius: 100px;
+    border-width: 0px;
+    margin-top: 47px;
+    margin-bottom: 54px;
+}
+
+.mainHow .eclipseOrder .divDelButtonDeHow a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #050505;
+}
+
+/* ESTILOS PRODUCTS */
+.headerProducts {
+    background: #FDF9F7;
+}
+
+.mainProduct {
+    padding-top: 32px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FDF9F7;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+
+.mainProduct .productMainH1 {
+    text-align: center;
+    width: 100%;
+    padding:0 10px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.mainProduct .prodsDiv {
+    width: 358px;
+    height: 188px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    margin-bottom:32px;
+}
+
+.prodOne {
+    margin-top: 32px;
+    background-image: url(../images/prods_favs.png);
+
+}
+.prodTwo {
+    background-image: url(../images/prods_frozen.png);
+}
+.prodThree {
+    background-image: url(../images/prods_bakery.png);
+}
+.prodFour {
+    background-image: url(../images/prods_lunch.png);
+}
+
+.mainProduct .prodsDiv p {
+    padding-left: 16px;
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+
+@media (max-width: 345px) {
+    .mainProduct .prodsDiv p {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+/* ESTILOS ORDER */
+.headerOrder {
+    background: #FDF9F7;
+}
+
+.firstSectionOrder {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+.firstSectionOrder h1 {
+    margin-top:32px;
+    width: 100%;
+    padding:0 10px;
+    text-align: center;
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.imagesOrder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    margin-top: 20px;
+    justify-content: space-around;
+    
+}
+.imagesOrder .imageWhatsapp {
+    background-image: url(../images/whatsapp_img.png);
+    width: 64px;
+    height: 64.44px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.imagesOrder .imagePedidosya {
+    background-image: url(../images/pedidos_ya_img.png);
+    width: 64px;
+    height: 64.44px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.imagesOrder .imageRappi {
+    background-image: url(../images/rappi_img.png);
+    width: 150.86px;
+    height: 64.44px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.firstSectionOrder .circleOrder {
+    background-image: url(../images/eclipse_orange_index.png);
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    position: relative;
+}
+
+.secondSectionOrder {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDF9F7;
+    text-align: center;
+    overflow: hidden;
+}
+
+.secondSectionOrder .sectionTakeAway {
+    background-image: url(../images/Rectangle\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 144px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+.secondSectionOrder .sectionTakeAway h2 {
+    width: 100%;
+    padding: 0 10px;
+}
+.secondSectionOrder .sectionTakeAway p {
+    width: 100%;
+    padding: 0 10px;
+}
+.secondSectionOrder .iconLocation {
+    margin-top: 32px;
+}
+.secondSectionOrder .iconTimer {
+    margin-top: 50px;
+}
+.secondSectionOrder .iconDelivery {
+    margin-top: 49px;
+}
+
+.secondSectionOrder .locationP {
+    margin-top: 16px;
+    width: 100%;
+    padding: 0 10px;
+height: 48px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+}
+.secondSectionOrder .timerPOne {
+    margin-top: 16px;
+    width: 100%;
+    padding: 0 10px;
+height: 48px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+}
+
+.secondSectionOrder .deliveryPOne {
+    margin-top: 17px;
+    width: 100%;
+    padding: 0 10px;
+height: 72px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+}
+
+.secondSectionOrder .dividerOrder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.lineDivider {
+    width: 13px;
+height: 24px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top:10px;
+}
+
+.buttonOrderDiv {
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 0px;
+}
+
+.btnOrder {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+width: 158px;
+height: 44px;
+background: #F2A654;
+border-radius: 100px;
+border-width: 0px;
+}
+
+.btnOrder a {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #050505;
+}
+
+/* ESTILOS CARPETA PRODUCTS */
+/* Favs */
+.headerProds {
+    background: #FDF9F7;
+}
+
+.firstSectionFavs {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.firstSectionFavs h1 {
+    margin-top:32px;
+    width: 220px;
+height: 36px;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #2F2F2F;
+}
+
+.titleFavs {
+    margin-top: 42px;
+    background-image: url(../images/prods_favs.png);
+    width: 358px;
+    height: 188px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom:32px;
+}
+
+
+.titleFavs h2 {
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+
+.firstSectionFavs .listOne div h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+}
+
+.firstSectionFavs .listOne div p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionFavs {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.secondSectionFavs .listTwo div h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+}
+
+.secondSectionFavs .listTwo div p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+.secondSectionFavs .listTwo .divThree p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+}
+
+.btnOrderTwo {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+margin: 48px;
+position: relative;
+width: 143px;
+height: 44px;
+border-width: 0px;
+background: #F2A654;
+border-radius: 100px;
+}
+
+.btnOrderTwo a {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #050505;
+}
+
+
+/* Frozen */
+.firstSectionFrozen {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.firstSectionFrozen h1 {
+    margin-top:32px;
+    width: 220px;
+height: 36px;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #2F2F2F;
+}
+
+.titleEmpanadas {
+    margin-top: 32px;
+    background-image: url(../images/frozen_one.png);
+    width: 358px;
+    height: 188px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom:32px;
+}
+
+
+.titleEmpanadas h2 {
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+
+.divEmpanadas  {
+    margin-top:33px;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+}
+
+.btnFrozen{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+margin-top: 72px;
+margin-bottom:50px;
+position: relative;
+width: 143px;
+height: 44px;
+border-width: 0px;
+background: #F2A654;
+border-radius: 100px;
+}
+
+.btnFrozen a {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #050505;
+}
+
+.secondSectionFrozen {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.titleRebozados {
+    margin-top: 32px;
+    background-image: url(../images/frozen_two.png);
+    width: 358px;
+    height: 188px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom:32px;
+}
+
+
+.titleRebozados h2 {
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+
+.divRebozados  {
+    margin-top:144px;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+}
+
+.btnFrozenTwo {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+margin-top: 144px;
+margin-bottom:108px;
+position: relative;
+width: 143px;
+height: 44px;
+border-width: 0px;
+background: #F2A654;
+border-radius: 100px;
+}
+
+.btnFrozenTwo a {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #050505;
+}
+
+.thirdSectionFrozen {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.titlePrepizza {
+    margin-top: 32px;
+    background-image: url(../images/frozen_three.png);
+    width: 358px;
+    height: 188px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom:32px;
+}
+
+
+.titlePrepizza h2 {
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+
+.divPrepizza  {
+    margin-top:204px;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+}
+
+.btnFrozenThree {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+margin-top: 204px;
+margin-bottom:108px;
+position: relative;
+width: 143px;
+height: 44px;
+border-width: 0px;
+background: #F2A654;
+border-radius: 100px;
+}
+
+.btnFrozenThree a {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #050505;
+}
+
+
+/* Bakery */
+.firstSectionBakery {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.firstSectionBakery h1 {
+    margin-top:32px;
+    width: 220px;
+height: 36px;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #2F2F2F;
+}
+
+.titlePanaderia {
+    margin-top: 32px;
+    background-image: url(../images/bakery_one.png);
+    width: 358px;
+    height: 188px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom:32px;
+}
+
+
+.titlePanaderia h2 {
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+
+.divPanaderia  {
+    margin-top:33px;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+}
+
+.btnBakery{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+margin-top: 32px;
+margin-bottom:50px;
+position: relative;
+width: 143px;
+height: 44px;
+border-width: 0px;
+background: #F2A654;
+border-radius: 100px;
+}
+
+.btnBakery a {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #050505;
+}
+
+.secondSectionBakery {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.titleTortas {
+    margin-top: 32px;
+    background-image: url(../images/bakery_two.png);
+    width: 358px;
+    height: 188px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom:32px;
+}
+
+
+.titleTortas h2 {
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+
+.secondSectionBakery .listOne div {
+    margin-bottom:32px;
+}
+.secondSectionBakery .listOne div h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+}
+
+.secondSectionBakery .listOne div p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    padding:0 20px;
+}
+
+.btnBakeryTwo {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+margin-top: 15px;
+margin-bottom:50px;
+position: relative;
+width: 143px;
+height: 44px;
+border-width: 0px;
+background: #F2A654;
+border-radius: 100px;
+}
+
+.btnBakeryTwo a {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #050505;
+}
+
+/* Lunches */
+.firstSectionLunch {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.firstSectionLunch h1 {
+    margin-top:32px;
+    width: 220px;
+height: 36px;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #2F2F2F;
+}
+
+.titleSandwiches {
+    margin-top: 32px;
+    background-image: url(../images/lunches_one.png);
+    width: 358px;
+    height: 188px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom:32px;
+}
+
+
+.titleSandwiches h2 {
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+
+.firstSectionLunch .listOne  {
+    margin-top:32px;
+    margin-bottom: 50px;
+}
+.firstSectionLunch .listOne div h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+    padding-bottom:10px;
+}
+
+.firstSectionLunch .listOne div p {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    padding:0 10px;
+    margin-bottom: 50px;
+}
+
+
+.btnLunch{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+margin-top:-50px;
+margin-bottom:51px;
+position: relative;
+width: 143px;
+height: 44px;
+border-width: 0px;
+background: #F2A654;
+border-radius: 100px;
+}
+
+.btnLunch a {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #050505;
+}
+
+.secondSectionLunch {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.titleWraps {
+    margin-top: 32px;
+    background-image: url(../images/lunches_two.png);
+    width: 358px;
+    height: 188px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom:32px;
+}
+
+
+.titleWraps h2 {
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+.secondSectionLunch .listTwo{
+    margin-top: 144px;
+    margin-bottom:146px;
+}
+.secondSectionLunch .listTwo div h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+    padding-bottom:10px;
+}
+
+.secondSectionLunch .listTwo div p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    padding:0 10px;
+}
+
+.btnLunchTwo {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+margin-bottom:108px;
+position: relative;
+width: 143px;
+height: 44px;
+border-width: 0px;
+background: #F2A654;
+border-radius: 100px;
+}
+
+.btnLunchTwo a {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #050505;
+}
+
+.thirdSectionLunch {
+    background: #FDF9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.titleEnsaladas {
+    margin-top: 32px;
+    background-image: url(../images/lunches_three.png);
+    width: 358px;
+    height: 188px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom:32px;
+}
+
+
+.titleEnsaladas h2 {
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+
+.thirdSectionLunch .listThree div {
+    margin-top:10px;
+}
+.thirdSectionLunch .listThree div h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+    padding-bottom: 5px;
+}
+
+.thirdSectionLunch .listThree div p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    padding:0 10px;
+}
+
+.btnLunchThree {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+margin-top: 84px;
+margin-bottom:50px;
+position: relative;
+width: 143px;
+height: 44px;
+border-width: 0px;
+background: #F2A654;
+border-radius: 100px;
+}
+
+.btnLunchThree a {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #050505;
+}
