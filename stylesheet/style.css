@@ -1156,9 +1156,8 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rg
 
 /* ESTILOS PRODUCTS */
 
-
 .mainProduct {
-    background: #FDF9F7;
+    background-color: #FDF9F7;
 }
 
 .mainProduct main {
@@ -1170,9 +1169,10 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rg
     justify-content: center;
     overflow: hidden;
     align-items: center;
+    text-align: center;
 }
 
-.mainProduct .productMainH1 {
+.mainProduct main .productMainH1 {
     text-align: center;
     width: 100%;
     padding:0 10px;
@@ -1183,40 +1183,34 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rg
     line-height: 36px;
 }
 
-.mainProduct .prodsDiv {
-    
-    width: 358px;
+.mainProduct main a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainProduct main .prodsDiv {
+    z-index: 10;
+    display: flex;
+    align-items: end;
     height: 188px;
+    width: 90%;
+    margin-bottom:32px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: end;
-    margin-bottom:32px;
 }
 
-.prodOne {
+.mainProduct main .prodOne {
     margin-top: 32px;
     background-image: url(../images/prods_favs.png);
 }
-/* .titleFavs {
-    z-index: 10;
-    margin-top: 42px;
-    background-image: url(../images/prods_favs.png);
-    width: 90%;
-    border-radius:5px;
-    height: 188px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-bottom:32px;
-} */
-.rectangleProdsOne {
+
+.mainProduct main .rectangleProdsOne {
     height: 112px;
-    transform: rotate(-24.61deg);
+    transform: rotate(34.93deg);
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
     margin-left: -100px;
     background-size: cover;
@@ -1224,20 +1218,58 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rg
     position: absolute;
     width: 300%;
     background-position: center;
-    margin-bottom: 200px;
+    margin-bottom: 450px;
 }
-.prodTwo {
+.mainProduct main .rectangleProdsOneTwo {
+    height: 112px;
+    transform: rotate(34.93deg);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+    margin-left: -100px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 300%;
+    background-position: center;
+    margin-bottom: 450px;
+}
+.mainProduct main .prodTwo {
     z-index: 10;
     background-image: url(../images/prods_frozen.png);
 }
-.prodThree {
+.mainProduct main .prodThree {
     background-image: url(../images/prods_bakery.png);
 }
-.prodFour {
+
+.mainProduct main .rectangleProdsTwo {
+    height: 112px;
+    transform: rotate(34.93deg);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+    margin-left: -100px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 300%;
+    background-position: center;
+    margin-top: 250px;
+}
+.mainProduct main .rectangleProdsTwoTwo {
+    height: 112px;
+    transform: rotate(34.93deg);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+    margin-left: -100px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 300%;
+    background-position: center;
+    margin-top: 250px;
+}
+
+.mainProduct main .prodFour {
     background-image: url(../images/prods_lunch.png);
 }
 
-.mainProduct .prodsDiv p {
+.mainProduct main .prodsDiv p {
     padding-left: 16px;
     font-style: normal;
 font-weight: 700;
