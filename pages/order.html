@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <div class="firstSectionOrder">
     <!-- NAV -->
     <!-- <div class="firstSectionAbout"> -->
     <header class="headerOrder">
@@ -37,7 +38,17 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./about.html">Quiénes somos</a></li>
                 <li><a href="./how.html">Cómo lo hacemos</a></li>
-                <li><a href="./products.html">Productos</a></li>
+                <li>
+                    <a class="not-active" href="./products.html">Productos</a>
+                    <img class="dropdownItem" src="../images/dropdown_item.png" alt="">
+                        <ul class="dropdownMenu">
+                            <li class="liDropdown"><a href="products.html">Todos los productos</a></li>
+                            <li class="liDropdown"><a href="./products/favs.html">Los más vendidos</a></li>
+                            <li class="liDropdown"><a href="./products/frozen.html">Congelados</a></li>
+                            <li class="liDropdown"><a href="./products/bakery.html">Bakery</a></li>
+                            <li class="liDropdown"><a href="./products/lunches.html">Almuerzos</a></li>
+                        </ul>
+                </li>
                 <li><a class="active" href="./order.html">Realizá tu pedido</a></li>
                 <li><a href="./contact.html">Contactanos</a></li>
             </ul>
@@ -45,7 +56,7 @@
     </header>
 
     <main>
-        <div class="firstSectionOrder">
+        
             <h1>Realizá tu pedido</h1>
             <div class="imagesOrder">
                 <div class="imageWhatsapp"></div>

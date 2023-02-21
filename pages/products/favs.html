@@ -19,7 +19,6 @@
 </head>
 
 <body>
-    <div class="firstSectionFavs">
     <!-- NAV -->
     <header class="headerProds">
         <nav>
@@ -34,7 +33,17 @@
                 <li><a href="../../index.html">Inicio</a></li>
                 <li><a href="../about.html">Quiénes somos</a></li>
                 <li><a href="../how.html">Cómo lo hacemos</a></li>
-                <li><a class="active" href="../products.html">Productos</a></li>
+                <li>
+                    <a class="active not-active" href="../products.html">Productos</a>
+                    <img class="dropdownItem" src="../../images/dropdown_item.png" alt="">
+                    <ul class="dropdownMenu">
+                        <li class="liDropdown"><a href="../products.html">Todos los productos</a></li>
+                        <li class="liDropdown"><a class="active" href="./favs.html">Los más vendidos</a></li>
+                        <li class="liDropdown"><a href="./frozen.html">Congelados</a></li>
+                        <li class="liDropdown"><a href="./bakery.html">Bakery</a></li>
+                        <li class="liDropdown"><a href="./lunches.html">Almuerzos</a></li>
+                    </ul>
+                </li>
                 <li><a href="../order.html">Realizá tu pedido</a></li>
                 <li><a href="../contact.html">Contactanos</a></li>
             </ul>
@@ -42,54 +51,63 @@
     </header>
 
     <main>
-        
-            <h1>Los más vendidos</h1>
-                <div class="titleFavs">
-                    <h2>Favoritos</h2>
-                </div>
-                <div class="rectangleFavs"></div>
-            <div class="listOne">
-                <div class="divOne">
-                    <h3>Cheesecake de frutos rojos</h3>
-                    <p>Clásica receta de cheesecake New York con cobertura de crema chantilly y compota de
-                        frutos rojos casera.</p>
-                </div>
-                <div class="divTwo">
-                    <h3>Sandwich de Palta</h3>
-                    <p>Baguette con queso crema, ciboulette, jamón cocido, queso danbo, palta y tomate.</p>
-                </div>
-                <div class="divThree">
-                    <h3>Sandwich de Crudo</h3>
-                    <p>Baguette con manteca, jamón crudo, queso danbo, tomate fresco y rúcula fresca.</p>
-                </div>
-                <div class="divFour">
-                    <h3>Wrap de Pollo</h3>
-                    <p>Salsa alioli, pollo a la plancha, zanahoria rallada, tomate fresco y palta.</p>
-                </div>
-            </div>
-        </div>
-        <div class="secondSectionFavs">
-            <div class="listTwo">
-                <div class="divOne">
-                    <h3>Wrap de Atún</h3>
-                    <p>Lomitos de atún con queso crema y ciboulette, huevo, palta, mix de verdes y tomate fresco.</p>
-                </div>
-                <div class="divTwo">
-                    <h3>Ensalada Gourmet</h3>
-                    <p>Mix de verdes, pollo, huevo, tomates cherry, zanahoria rallada, oliva, limón y grisines.</p>
-                </div>
-                <div class="divThree">
-                    <p>Prepizza</p>
-                    <p>Medallones de brócoli</p>
-                    <p>Croqueta de espinaca</p>
-                    <p>Pan de molde integral</p>
-                </div>
-            </div>
-            <button class="btnOrderTwo"><a href="../order.html">Pedir ahora</a></button>
-        
+        <div class="firstSectionFavs">
 
+            <h1>Los más vendidos</h1>
+            <div class="titleFavs">
+                <h2 class="h2FavsMobile">Favoritos</h2>
+                <h2 class="h2FavDesktop">Los más vendidos</h2>
+            </div>
+            <div class="rectangleFavs"></div>
+            <div class="containerFavsDesktop">
+                <div class="listOne">
+                    <div class="divOne">
+                        <h3>Cheesecake de frutos rojos</h3>
+                        <p>Clásica receta de cheesecake New York con cobertura de crema chantilly y compota de
+                            frutos rojos casera.</p>
+                    </div>
+                    <div class="divTwo">
+                        <h3>Sandwich de Palta</h3>
+                        <p>Baguette con queso crema, ciboulette, jamón cocido, queso danbo, palta y tomate.</p>
+                    </div>
+                    <div class="divThree">
+                        <h3>Sandwich de Crudo</h3>
+                        <p>Baguette con manteca, jamón crudo, queso danbo, tomate fresco y rúcula fresca.</p>
+                    </div>
+                    <div class="divFour">
+                        <h3>Wrap de Pollo</h3>
+                        <p>Salsa alioli, pollo a la plancha, zanahoria rallada, tomate fresco y palta.</p>
+                    </div>
+
+                    <div class="divFive">
+                        <h3>Wrap de Atún</h3>
+                        <p>Lomitos de atún con queso crema y ciboulette, huevo, palta, mix de verdes y tomate
+                            fresco.
+                        </p>
+                    </div>
+                    <div class="divSix">
+                        <h3>Ensalada Gourmet</h3>
+                        <p>Mix de verdes, pollo, huevo, tomates cherry, zanahoria rallada, oliva, limón y grisines.
+                        </p>
+                    </div>
+                </div>
+                <div class="divSeven">
+                    <p>Medallones de brócoli y queso</p>
+                    <p>Croquetas de espinaca</p>
+                    <p>Pan de molde integral o blanco</p>
+                    <p>Medialunas de manteca</p>
+                </div>
+                <img class="imgFavsDesktop" src="../../images/favsDesktop.png" alt="sandwich">
+            </div>
+                <button class="btnOrderTwoFavs"><a href="../order.html">Pedir ahora</a></button>
+           
+
+        </div>
     </main>
-</div>
+
+
+
+
     <!-- <footer>
     <h2>Seguinos</h2>
     <ul>

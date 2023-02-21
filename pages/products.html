@@ -21,64 +21,75 @@
 
 <body>
     <div class="mainProduct">
-    <!-- NAV -->
-    <header class="headerProducts">
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-              <img class="navbarIcons" src="../images/Icon _menu_.png" alt="">
-            </label>
-            <a href="../index.html" class="enlace">
-              <img src="../images/Group.png" alt="" class="logo">
-            </a>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./about.html">Quiénes somos</a></li>
-                <li><a href="./how.html">Cómo lo hacemos</a></li>
-                <li><a class="active" href="./products.html">Productos</a></li>
-                <li><a href="./order.html">Realizá tu pedido</a></li>
-                <li><a href="./contact.html">Contactanos</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!-- NAV -->
+        <header class="headerProducts">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <img class="navbarIcons" src="../images/Icon _menu_.png" alt="">
+                </label>
+                <a href="../index.html" class="enlace">
+                    <img src="../images/Group.png" alt="" class="logo">
+                </a>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./about.html">Quiénes somos</a></li>
+                    <li><a href="./how.html">Cómo lo hacemos</a></li>
+                    <li>
+                        <a class="active not-active" href="./products.html">Productos</a>
+                        <img class="dropdownItem" src="../images/dropdown_item.png" alt="">
+                        <ul class="dropdownMenu">
+                            <li class="liDropdown bigMenuProds"><a class="active" href="products.html">Todos los
+                                    productos</a></li>
+                            <li class="liDropdown"><a href="./products/favs.html">Los más vendidos</a></li>
+                            <li class="liDropdown"><a href="./products/frozen.html">Congelados</a></li>
+                            <li class="liDropdown"><a href="./products/bakery.html">Bakery</a></li>
+                            <li class="liDropdown"><a href="./products/lunches.html">Almuerzos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./order.html">Realizá tu pedido</a></li>
+                    <li><a href="./contact.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <h1 class="productMainH1">Productos</h1>
-        <a href="./products/favs.html">
-        <div class="prodsDiv prodOne">
-            <p class="parrafoLoMasVendido">Los más vendidos</p>
-        </div>
-        </a>
-        <div class="rectangleProdsOne"></div>
-        <div class="rectangleProdsOneTwo"></div>
-        <a href="./products/frozen.html">
-        <div class="prodsDiv prodTwo">
-            <p class="parrafoCongelado">Congelados</p>
-        </div>
-        </a>
-        <a href="./products/bakery.html">
-        <div class="prodsDiv prodThree">
-            <p class="parrafoBakery">Bakery</p>
-        </div>
-        </a>
-        <div class="rectangleProdsTwo"></div>
-        <div class="rectangleProdsTwoTwo"></div>
-        <a href="./products/lunches.html">
-        <div class="prodsDiv prodFour">
-            <p class="productAlmuerzos">Almuerzos</p>
-        </div>
-        </a> 
-    </main>
-</div>
+        <main>
+            <h1 class="productMainH1">Productos</h1>
+            <h1 class="productMainH1Desktop">Productos Soylu</h1>
+            <section class="gridProds">
+                <a class="prodA leftProds" href="./products/favs.html">
+                    <div class="prodsDiv prodOne">
+                        <p class="parrafoLoMasVendido">Los más vendidos</p>
+                    </div>
+                </a>
+                <div class="rectangleProdsOne"></div>
+                <a class="prodB rightProds" href="./products/frozen.html">
+                    <div class="prodsDiv prodTwo">
+                        <p class="parrafoCongelado">Congelados</p>
+                    </div>
+                </a>
 
-    <!-- <footer>
-    <h2>Seguinos</h2>
-    <ul>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>Whatsapp</li>
-    </ul>
-</footer> -->
+                <a class="prodC leftProds" href="./products/bakery.html">
+                    <div class="prodsDiv prodThree">
+                        <p class="parrafoBakery">Bakery</p>
+                    </div>
+                </a>
+                <div class="rectangleProdsTwo"></div>
+                <a class="prodD rightProds" href="./products/lunches.html">
+                    <div class="prodsDiv prodFour">
+                        <p class="productAlmuerzos">Almuerzos</p>
+                    </div>
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <!-- Display none media querie mobile -->
+    <footer class="footerProds">
+        <img src="../images/icono camión.svg" alt="">
+        <p>¡Hacemos envíos a domicilio y take away!</p>
+        <img src="../images/icono camión.svg" alt="">
+    </footer>
 
     <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

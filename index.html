@@ -19,7 +19,8 @@
 </head>
 
 <body>
-  <div class="heroImageIndex">
+  <div class="firstSectionIndex">  
+    <div class="heroImageIndex">
     <!-- NAV -->
     <header>
       <nav>
@@ -34,7 +35,17 @@
           <li><a class="active" href="index.html">Inicio</a></li>
           <li><a href="./pages/about.html">Quiénes somos</a></li>
           <li><a href="./pages/how.html">Cómo lo hacemos</a></li>
-          <li><a href="./pages/products.html">Productos</a></li>
+          <li class="prods">
+            <a class="not-active" href="./pages/products.html">Productos</a>
+            <img class="dropdownItem" src="./images/dropdown_item.png" alt="">
+            <ul class="dropdownMenu">
+              <li class="liDropdown"><a href="./pages/products.html">Todos los productos</a></li>
+              <li class="liDropdown"><a href="./pages/products/favs.html">Los más vendidos</a></li>
+              <li class="liDropdown"><a href="./pages/products/frozen.html">Congelados</a></li>
+              <li class="liDropdown"><a href="./pages/products/bakery.html">Bakery</a></li>
+              <li class="liDropdown"><a href="./pages/products/lunches.html">Almuerzos</a></li>
+            </ul>
+          </li>
           <li><a href="./pages/order.html">Realizá tu pedido</a></li>
           <li><a href="./pages/contact.html">Contactanos</a></li>
         </ul>
@@ -46,10 +57,11 @@
         <h1 class="firstTitleIndex">Comer sin gluten</h1>
         <p class="textIndex">nunca fue tan rico</p>
       </div>
-      <div class="btnIndexDiv">
+      <div class="btnOrderIndexDiv">
         <button class="btnOrderIndex"><a href="">Pedir ahora</a></button>
       </div>
   </div>
+</div>
 
   <div class="secondSectionindex">
     <img class="logoIndex" src="./images/Group.png" alt="">
