@@ -19,16 +19,16 @@
 </head>
 
 <body>
-    <div class="firstSectionFrozen">
+
     <!-- NAV -->
     <header class="headerProds">
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
-              <img class="navbarIcons" src="../../images/Icon _menu_.png" alt="">
+                <img class="navbarIcons" src="../../images/Icon _menu_.png" alt="">
             </label>
             <a href="../../index.html" class="enlace">
-              <img src="../../images/Group.png" alt="" class="logo">
+                <img src="../../images/Group.png" alt="" class="logo">
             </a>
             <ul>
                 <li><a href="../../index.html">Inicio</a></li>
@@ -37,13 +37,13 @@
                 <li>
                     <a class="active not-active" href="../products.html">Productos</a>
                     <img class="dropdownItem" src="../../images/dropdown_item.png" alt="">
-                        <ul class="dropdownMenu">
-                            <li class="liDropdown"><a href="../products.html">Todos los productos</a></li>
-                            <li class="liDropdown"><a href="./favs.html">Los más vendidos</a></li>
-                            <li class="liDropdown"><a class="active" href="./frozen.html">Congelados</a></li>
-                            <li class="liDropdown"><a href="./bakery.html">Bakery</a></li>
-                            <li class="liDropdown"><a href="./lunches.html">Almuerzos</a></li>
-                        </ul>
+                    <ul class="dropdownMenu">
+                        <li class="liDropdown"><a href="../products.html">Todos los productos</a></li>
+                        <li class="liDropdown"><a href="./favs.html">Los más vendidos</a></li>
+                        <li class="liDropdown"><a class="active" href="./frozen.html">Congelados</a></li>
+                        <li class="liDropdown"><a href="./bakery.html">Bakery</a></li>
+                        <li class="liDropdown"><a href="./lunches.html">Almuerzos</a></li>
+                    </ul>
                 </li>
                 <li><a href="../order.html">Realizá tu pedido</a></li>
                 <li><a href="../contact.html">Contactanos</a></li>
@@ -52,11 +52,15 @@
     </header>
 
     <main>
+        <div class="firstSectionFrozen">
             <h1>Congelados</h1>
             <div class="titleEmpanadas">
-                <h2>Empanadas</h2>
+                <h2 class="h2FrozenMobile">Empanadas</h2>
+                <h2 class="h2FrozenDesktop">Congelados</h2>
             </div>
             <div class="rectangleFrozen"></div>
+            <div class="divEmpanadasDesktop">
+            <h3 class="titleEmpanadasDesktop">Empanadas</h3>
             <div class="divEmpanadas">
                 <p>Bondiola braseada</p>
                 <p>Verdura</p>
@@ -66,11 +70,37 @@
                 <p>Capresse con aceitunas</p>
                 <p>Quinoa y vegetales</p>
             </div>
-            <button class="btnFrozen"><a href="../order.html">Pedir ahora</a></button>
+            <img class="imgEmpanadasDesktop" src="../../images/empanadasDesktop.png" alt="empanadas">
+            <div class="btnFrozenDiv">
+                <button class="btnFrozen"><a href="../order.html">Pedir ahora</a></button>
+            </div>
+        </div>
+            
+        </div>
+        <div class="thirdSectionFrozen">
+            <div class="titlePrepizza">
+                <h2>Prepizza</h2>
+                <p>Con salsa de tomate</p>
+                <p>Con cebolla</p>
+            </div>
+            <div class="rectangleFrozenThree"></div>
+            <div class="divPrepizza">
+            <p>Con salsa de tomate</p>
+            <p>Con cebolla</p>
+        </div>
+            <img class="imgPrepizza" src="../../images/prepizzaFrozen.png" alt="pizzas">
+            <div class="btnFrozenThreeDiv">
+                <button class="btnFrozenThree"><a href="../order.html">Pedir ahora</a></button>
+            </div>
         </div>
         <div class="secondSectionFrozen">
             <div class="titleRebozados">
                 <h2>Rebozados</h2>
+                <p>Nuggets de pollo</p>
+                <p>Croquetas de espinaca</p>
+                <p>Medallones de brócoli y queso</p>
+                <p>Medallones de garbanzos y calabaza</p>
+                <p>Medallones de quinoa y hongos</p>
             </div>
             <div class="rectangleFrozenTwo"></div>
             <div class="divRebozados">
@@ -80,22 +110,15 @@
                 <p>Medallones de garbanzos y calabaza</p>
                 <p>Medallones de quinoa y hongos</p>
             </div>
-            <button class="btnFrozenTwo"><a href="../order.html">Pedir ahora</a></button>
+            <img class="imgRebozados" src="../../images/rebozadosDesktop.png" alt="rebozados">
+            <div class="btnFrozenTwoDiv">
+                <button class="btnFrozenTwo"><a href="../order.html">Pedir ahora</a></button>
+            </div>
         </div>
-        <div class="thirdSectionFrozen">
-            <div class="titlePrepizza">
-                <h2>Prepizza</h2>
-            </div>
-            <div class="rectangleFrozenThree"></div>
-            <div class="divPrepizza">
-                <p>Con salsa de tomate</p>
-                <p>Con cebolla</p>
-            </div>
-            <button class="btnFrozenThree"><a href="../order.html">Pedir ahora</a></button>
         
     </main>
-</div>
-       <!--  <footer>
+    
+    <!--  <footer>
             <h2>Seguinos</h2>
             <ul>
                 <li>Facebook</li>
@@ -104,10 +127,10 @@
             </ul>
         </footer> -->
 
-        <!-- Bootstrap Scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

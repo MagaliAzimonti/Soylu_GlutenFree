@@ -19,49 +19,49 @@
 </head>
 
 <body>
-  <div class="firstSectionIndex">  
+  <div class="firstSectionIndex">
     <div class="heroImageIndex">
-    <!-- NAV -->
-    <header>
-      <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <img class="navbarIcons" src="./images/icon_menu_white.png" alt="">
-        </label>
-        <a href="index.html" class="enlace">
-          <img src="./images/Group.png" alt="" class="logo">
-        </a>
-        <ul>
-          <li><a class="active" href="index.html">Inicio</a></li>
-          <li><a href="./pages/about.html">Quiénes somos</a></li>
-          <li><a href="./pages/how.html">Cómo lo hacemos</a></li>
-          <li class="prods">
-            <a class="not-active" href="./pages/products.html">Productos</a>
-            <img class="dropdownItem" src="./images/dropdown_item.png" alt="">
-            <ul class="dropdownMenu">
-              <li class="liDropdown"><a href="./pages/products.html">Todos los productos</a></li>
-              <li class="liDropdown"><a href="./pages/products/favs.html">Los más vendidos</a></li>
-              <li class="liDropdown"><a href="./pages/products/frozen.html">Congelados</a></li>
-              <li class="liDropdown"><a href="./pages/products/bakery.html">Bakery</a></li>
-              <li class="liDropdown"><a href="./pages/products/lunches.html">Almuerzos</a></li>
-            </ul>
-          </li>
-          <li><a href="./pages/order.html">Realizá tu pedido</a></li>
-          <li><a href="./pages/contact.html">Contactanos</a></li>
-        </ul>
-      </nav>
-    </header>
+      <!-- NAV -->
+      <header>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <img class="navbarIcons" src="./images/icon_menu_white.png" alt="">
+          </label>
+          <a href="index.html" class="enlace">
+            <img src="./images/Group.png" alt="" class="logo">
+          </a>
+          <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="./pages/about.html">Quiénes somos</a></li>
+            <li><a href="./pages/how.html">Cómo lo hacemos</a></li>
+            <li class="prods">
+              <a class="not-active" href="./pages/products.html">Productos</a>
+              <img class="dropdownItem" src="./images/dropdown_item.png" alt="">
+              <ul class="dropdownMenu">
+                <li class="liDropdown"><a href="./pages/products.html">Todos los productos</a></li>
+                <li class="liDropdown"><a href="./pages/products/favs.html">Los más vendidos</a></li>
+                <li class="liDropdown"><a href="./pages/products/frozen.html">Congelados</a></li>
+                <li class="liDropdown"><a href="./pages/products/bakery.html">Bakery</a></li>
+                <li class="liDropdown"><a href="./pages/products/lunches.html">Almuerzos</a></li>
+              </ul>
+            </li>
+            <li><a href="./pages/order.html">Realizá tu pedido</a></li>
+            <li><a href="./pages/contact.html">Contactanos</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <div class="titleTextIndex">
-        <h1 class="firstTitleIndex">Comer sin gluten</h1>
-        <p class="textIndex">nunca fue tan rico</p>
-      </div>
-      <div class="btnOrderIndexDiv">
-        <button class="btnOrderIndex"><a href="">Pedir ahora</a></button>
-      </div>
+      <main>
+        <div class="titleTextIndex">
+          <h1 class="firstTitleIndex">Comer sin gluten</h1>
+          <p class="textIndex">nunca fue tan rico</p>
+        </div>
+        <div class="btnOrderIndexDiv">
+          <button class="btnOrderIndex"><a href="">Pedir ahora</a></button>
+        </div>
+    </div>
   </div>
-</div>
 
   <div class="secondSectionindex">
     <img class="logoIndex" src="./images/Group.png" alt="">
@@ -83,6 +83,7 @@
     <div>
       <h2 class="thirdTitleIndex">Los más vendidos</h2>
     </div>
+    <!-- Version Mobile -->
     <div class="indexCarouselLine">
       <div class="slider">
         <div>
@@ -112,12 +113,97 @@
       </div>
     </div>
     <div class="rectangleCarouselOne"></div>
+    <!-- Versión Desktop -->
+    <div class="carrousel">
+      <div class="conteCarrousel">
+        <div class="itemCarrousel" id="itemCarrousel-1">
+          <div class="itemCarrouselTarjeta">
+            <div class="divImagenesCarrousel">
+              <img src="./images/bgCarouselDk.png" alt="">
+              <img src="./images/bgCarouselDk.png" alt="">
+              <img src="./images/bgCarouselDk.png" alt="">
+            </div>
+          </div>
+          <div class="itemCarrouselArrows">
+            <a href="#itemCarrousel-2">
+            </a>
+            <a href="#itemCarrousel-2">
+              <img src="./images/sliderArrowtwo.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="itemCarrousel" id="itemCarrousel-2">
+          <div class="itemCarrouselTarjeta">
+            <div class="divImagenesCarrousel">
+              <img src="./images/bgCarouselDk.png" alt="">
+              <img src="./images/bgCarouselDk.png" alt="">
+              <img src="./images/bgCarouselDk.png" alt="">
+            </div>
+          </div>
+          <div class="itemCarrouselArrows">
+            <a href="#itemCarrousel-1">
+              <img src="./images/sliderArrowleft.png" alt="">
+            </a>
+            <a href="#itemCarrousel-1">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="countPrueba">
+        <a href="#itemCarrousel-1"><button>.</button></a>
+        <a href="#itemCarrousel-2"><button>.</button></a>
+      </div>
+    </div>
     <div class="btnVerMasIndexDiv">
       <button class="btnVerMasIndex"><a href="">Ver más</a></button>
     </div>
 
     <!-- CAROUSEL 2-->
     <h2 class="fourthTitleIndex">Experiencia Soylu</h2>
+    <!-- Versión desktop -->
+    <div class="carrouselTwo">
+      <div class="conteCarrouselTwo">
+        <div class="itemCarrouselTwo" id="itemCarrouselTwo-1">
+          <div class="itemCarrouselTarjetaTwo">
+            <div class="divImagenesCarrouselTwo">
+              <img src="./images/ClienteDesktop-1.png" alt="">
+              <img src="./images/ClienteDesktop-2.png" alt="">
+              <img src="./images/ClienteDesktop-3.png" alt="">
+              <img src="./images/ClienteDesktop-4.png" alt="">
+            </div>
+          </div>
+          <div class="itemCarrouselArrowsTwo">
+            <a href="#itemCarrouselTwo-3">
+            </a>
+            <a href="#itemCarrouselTwo-2">
+              <img src="./images/sliderArrowtwo.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="itemCarrouselTwo" id="itemCarrouselTwo-2">
+          <div class="itemCarrouselTarjetaTwo">
+            <div class="divImagenesCarrouselTwo">
+              <img src="./images/ClienteDesktop-4.png" alt="">
+              <img src="./images/ClienteDesktop-5.png" alt="">
+              <img src="./images/ClienteDesktop-6.png" alt="">
+              <img src="./images/ClienteDesktop-7.png" alt="">
+            </div>
+          </div>
+          <div class="itemCarrouselArrowsTwo">
+            <a href="#itemCarrouselTwo-1">
+              <img src="./images/sliderArrowleft.png" alt="">
+            </a>
+            <a href="#itemCarrouselTwo-3">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="countPruebaTwo">
+        <a href="#itemCarrouselTwo-1"><button>.</button></a>
+        <a href="#itemCarrouselTwo-2"><button>.</button></a>
+      </div>
+    </div>
+    <!-- Versión mobile -->
     <div class="indexCarouselLineTwo">
       <div class="sliderTwo">
         <div class="elementoTwo">
@@ -161,6 +247,7 @@
       </div>
     </div>
     <div class="rectangleCarouselTwo"></div>
+  
 
     </main>
     <footer>
@@ -172,6 +259,7 @@
       </div>
     </footer>
   </div>
+  
 
   <!-- Bootstrap Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

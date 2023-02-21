@@ -13,42 +13,51 @@ body {
     overflow-x: hidden;
     background-color: #FDF9F7;
 }
+
 a {
     text-decoration: none;
 }
 
 /* ESTILOS HEADER */
 
-nav{
+nav {
     height: 80px;
     width: 100%;
 }
-.enlace{
+
+.enlace {
     position: absolute;
     padding: 20px 50px;
 }
-.logo{
+
+.logo {
     height: 40px;
 }
-nav ul{
+
+nav ul {
     float: right;
     margin-right: 20px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
     color: black;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
 }
-li a.active, li a:hover{
+
+li a.active,
+li a:hover {
     transition: .2s;
 }
-.checkbtn{
+
+.checkbtn {
     font-size: 30px;
     color: #fff;
     float: right;
@@ -57,43 +66,48 @@ li a.active, li a:hover{
     cursor: pointer;
     display: none;
 }
-#check{
+
+#check {
     display: none;
 }
 
 
-@media (max-width: 952px){
-    .enlace{
+@media (max-width: 952px) {
+    .enlace {
         padding-left: 20px;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 16px;
     }
 }
 
-@media (max-width: 858px){
-    .checkbtn{
+@media (max-width: 858px) {
+    .checkbtn {
         display: block;
     }
+
     .enlace img {
-        width:83px;
+        width: 83px;
         height: 60.61px;
-       margin:10px 5px;
+        margin: 10px 5px;
     }
+
     .checkbtn img {
         width: 24px;
         height: 24px;
         margin-top: 50px;
 
     }
-    
-    nav ul{
+
+    nav ul {
         z-index: 999;
         position: fixed;
         width: 200px;
         height: 352px;
         background: linear-gradient(0deg, #F5F5F5, #F5F5F5), #FFFBFE;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);        border-radius: 4px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
         top: 90px;
         right: -150%;
         transition: all .5s;
@@ -103,47 +117,51 @@ li a.active, li a:hover{
     }
 
     nav ul li {
-        margin: -13px; 
+        margin: -13px;
         margin-left: -25px;
 
     }
-    
+
     nav ul li a {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            letter-spacing: 0.5px;
-            color: #1C1B1F;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        color: #1C1B1F;
     }
-    
-    li a:hover, li a.active{
+
+    li a:hover,
+    li a.active {
         background: none;
-        color: 
-        rgba(242, 166, 84, 1);
+        color:
+            rgba(242, 166, 84, 1);
     }
-    #check:checked ~ ul{
-        right:-30px;
+
+    #check:checked~ul {
+        right: -30px;
     }
+
     .headerAbout nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      
+
     }
+
     .headerAbout nav .checkbtn {
         margin-left: 90%;
     }
 
     .headerAbout nav ul {
-        top:150px;
+        top: 150px;
         z-index: 999;
     }
-    
-    .headerAbout nav .enlace img  {
-        margin-top: 100px; 
+
+    .headerAbout nav .enlace img {
+        margin-top: 100px;
         width: 106.81px;
-        height:78px;
+        height: 78px;
     }
 
     .dropdownItem {
@@ -151,47 +169,55 @@ li a.active, li a:hover{
     }
 }
 
-@media (max-width:1439px) and (min-width: 859px){
-    nav{
+@media (max-width:1439px) and (min-width: 859px) {
+    nav {
         height: 100px;
         width: 100%;
     }
-    .enlace{
+
+    .enlace {
         position: absolute;
         padding: 30px 20px;
     }
-    .logo{
+
+    .logo {
         height: 60px;
         width: 80px;
     }
-    nav ul{
+
+    nav ul {
         float: right;
-        margin:0;
+        margin: 0;
 
     }
-    nav ul li{
+
+    nav ul li {
         font-style: normal;
         font-weight: 300;
         font-size: 10px;
         line-height: 28px;
         letter-spacing: -0.011em;
-        padding-top:50px;
+        padding-top: 50px;
         display: inline-block;
         /* line-height: 80px;
         margin: 0 5px; */
     }
-    nav ul li a{
+
+    nav ul li a {
         color: #2F2F2F;
         padding: 2px 1px;
-      
+
     }
-    li a.active, li a:hover{
+
+    li a.active,
+    li a:hover {
         font-weight: 700;
         color: #2F2F2F;
         text-decoration: underline 4px rgba(242, 166, 84, 1);
-        
+
     }
-    .checkbtn{
+
+    .checkbtn {
         font-size: 30px;
         color: #fff;
         float: right;
@@ -200,7 +226,8 @@ li a.active, li a:hover{
         cursor: pointer;
         display: none;
     }
-    #check{
+
+    #check {
         display: none;
     }
 
@@ -213,40 +240,40 @@ li a.active, li a:hover{
         width: 321px;
         height: 340px;
         background: #FDF9F7;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        margin:0;
-        padding:0;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin: 0;
+        padding: 0;
         display: none;
         border: 1px solid #FDF9F7;
         border-radius: 8px;
         z-index: 800;
     }
-    
+
     nav ul li .dropdownMenu li {
         height: 20%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         padding-left: 10px;
-        border-bottom: 1px solid rgba(255, 170, 136, 0.4); 
+        border-bottom: 1px solid rgba(255, 170, 136, 0.4);
     }
-    
+
     .dropdownMenu li a {
         font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #2F2F2F;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2F2F2F;
     }
-    
-    
+
+
     nav ul li:hover .dropdownMenu {
         display: block;
     }
-    
+
     .dropdownMenu li a:hover {
         /* border-radius: 10px;
         background-color: rgba(242, 166, 84, 1); */
@@ -264,29 +291,33 @@ li a.active, li a:hover{
     .not-active {
         pointer-events: none;
         cursor: default;
-        
+
     }
-   
+
 }
 
 
-@media (min-width: 1440px){
-    nav{
+@media (min-width: 1440px) {
+    nav {
         height: 208px;
         width: 100%;
     }
-    .enlace{
+
+    .enlace {
         position: absolute;
         padding: 41px 47px;
     }
-    .logo{
+
+    .logo {
         height: 126px;
         width: 173px;
     }
-    nav ul{
+
+    nav ul {
         float: right;
     }
-    nav ul li{
+
+    nav ul li {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -297,16 +328,20 @@ li a.active, li a:hover{
         /* line-height: 80px;
         margin: 0 5px; */
     }
-    nav ul li a{
+
+    nav ul li a {
         color: #2F2F2F;
-      
+
     }
-    li a.active, li a:hover{
+
+    li a.active,
+    li a:hover {
         font-weight: 700;
         color: #2F2F2F;
         text-decoration: underline 4px rgba(242, 166, 84, 1);
     }
-    .checkbtn{
+
+    .checkbtn {
         font-size: 30px;
         color: #fff;
         float: right;
@@ -315,7 +350,8 @@ li a.active, li a:hover{
         cursor: pointer;
         display: none;
     }
-    #check{
+
+    #check {
         display: none;
     }
 
@@ -328,40 +364,40 @@ li a.active, li a:hover{
         width: 321px;
         height: 340px;
         background: #FDF9F7;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        margin:0;
-        padding:0;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin: 0;
+        padding: 0;
         display: none;
         border: 1px solid #FDF9F7;
         border-radius: 8px;
         z-index: 800;
     }
-    
+
     nav ul li .dropdownMenu li {
         height: 20%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         padding-left: 5px;
-        border-bottom: 1px solid rgba(255, 170, 136, 0.4); 
+        border-bottom: 1px solid rgba(255, 170, 136, 0.4);
     }
-    
+
     .dropdownMenu li a {
         font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #2F2F2F;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2F2F2F;
     }
-    
-    
+
+
     nav ul li:hover .dropdownMenu {
         display: block;
     }
-    
+
     .dropdownMenu li a:hover {
         /* border-radius: 10px;
         background-color: rgba(242, 166, 84, 1); */
@@ -383,9 +419,9 @@ li a.active, li a:hover{
     .not-active {
         pointer-events: none;
         cursor: default;
-        
+
     }
-    
+
 }
 
 
@@ -439,9 +475,9 @@ nav ul li a{
         letter-spacing: -0.011em;
         padding-top: 90px;
         display: inline-block; */
-        /* line-height: 80px;
+/* line-height: 80px;
         margin: 0 5px; */
-   /*  }
+/*  }
     nav ul li a{
         color: #2F2F2F;
         padding: 20px 20px;
@@ -464,7 +500,7 @@ nav ul li a{
     #check{
         display: none;
     } */
-    
+
 /* } */
 
 /*----------------------------------------------- */
@@ -656,13 +692,13 @@ li a:hover, li a.active{
 .firstSectionIndex main {
     display: flex;
     flex-direction: column;
-     align-items: center;
-     justify-content: end;
+    align-items: center;
+    justify-content: end;
 }
 
 .firstSectionIndex .titleTextIndex {
     margin-top: 200px;
-color: #000000;
+    color: #000000;
 }
 
 .firstSectionIndex .titleTextIndex .firstTitleIndex {
@@ -693,16 +729,16 @@ color: #000000;
 
 .btnOrderIndex {
     display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 8px;
-border:0;
-width: 143px;
-height: 44px;
-background: #F2A654;
-border-radius: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    border: 0;
+    width: 143px;
+    height: 44px;
+    background: #F2A654;
+    border-radius: 100px;
 }
 
 .firstSectionIndex main .btnOrderIndex a {
@@ -735,7 +771,7 @@ border-radius: 100px;
 
 .secondSectionindex .secondTitleIndex {
     width: 100%;
-    padding:0 10px;
+    padding: 0 10px;
     height: 36px;
     margin-top: 32px;
     font-style: normal;
@@ -758,7 +794,7 @@ border-radius: 100px;
 
 .secondSectionindex .textGlutenFreeIndex {
     width: 100%;
-    padding:0 10px;
+    padding: 0 10px;
     height: 24px;
     margin-top: 16px;
     font-style: normal;
@@ -780,7 +816,7 @@ border-radius: 100px;
 
 .secondSectionindex .textCalidadIndex {
     width: 100%;
-    padding:0 10px;
+    padding: 0 10px;
     height: 24px;
     margin-top: 16px;
     font-style: normal;
@@ -793,7 +829,7 @@ border-radius: 100px;
 
 .secondSectionindex .textSecondIndex {
     width: 100%;
-    padding:0 10px;
+    padding: 0 10px;
     height: 96px;
     margin-top: 64px;
     font-style: normal;
@@ -865,14 +901,15 @@ border-radius: 100px;
 .indexCarouselLine {
     display: flex;
     flex-direction: column;
-  /*   align-items: center; */
+    /*   align-items: center; */
     justify-content: center;
-    
-    
+
+
 }
-.thirdSectionIndex .thirdTitleIndex { 
+
+.thirdSectionIndex .thirdTitleIndex {
     width: 100%;
-    padding:0 10px;
+    padding: 0 10px;
     height: 36px;
     font-style: normal;
     font-weight: 700;
@@ -880,21 +917,22 @@ border-radius: 100px;
     line-height: 36px;
     text-align: center;
     color: #000000;
-   
-} 
+
+}
 
 .slider {
     margin-top: 48px;
     z-index: 100;
     display: flex;
     flex-wrap: nowrap;
-    overflow:scroll;
-    
-    
+    overflow: scroll;
+
+
 }
 
 .rectangleCarouselOne {
     height: 112px;
+    position: absolute;
     transform: rotate(-24.61deg);
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
     margin-left: -100px;
@@ -902,25 +940,26 @@ border-radius: 100px;
     background-position: center;
     width: 300%;
     background-position: center;
-    margin-top: -280px;
-    margin-bottom: 150px;
+    margin-top: -800px;
 }
 
 .elemento {
-	flex: 1 0 auto;
-	margin: 0 15px;
-	width: 160px;
-	height: 160px;
+    flex: 1 0 auto;
+    margin: 0 15px;
+    width: 160px;
+    height: 160px;
 }
-.carousel1P{
+
+.carousel1P {
     font-style: normal;
-font-weight: 300;
-font-size: 10px;
-line-height: 15px;
-color: #2F2F2F;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+    color: #2F2F2F;
     text-align: center;
-    margin-top:5px;
+    margin-top: 5px;
 }
+
 .btnVerMasIndexDiv {
     display: flex;
     flex-direction: column;
@@ -928,53 +967,54 @@ color: #2F2F2F;
     align-items: center;
     margin-top: 55px;
 }
+
 .btnVerMasIndex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-padding: 0px;
-gap: 8px;
-border-width: 0;
-width: 116px;
-height: 44px;
-background: #F2A654;
-border-radius: 100px;
+    padding: 0px;
+    gap: 8px;
+    border-width: 0;
+    width: 116px;
+    height: 44px;
+    background: #F2A654;
+    border-radius: 100px;
 }
 
 .btnVerMasIndex a {
     font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.1px;
-color: #050505;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #050505;
 }
 
 /* Carrusel 2 */
 .fourthTitleIndex {
     width: 100%;
-    padding:0 10px;
+    padding: 0 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
     /* identical to box height */
-    margin-top:32px;
+    margin-top: 32px;
     text-align: center;
     color: #2F2F2F;
-     
+
 }
 
 .indexCarouselLineTwo {
     display: flex;
     flex-direction: column;
-  /*   align-items: center; */
+    /*   align-items: center; */
     justify-content: center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .sliderTwo {
@@ -982,12 +1022,13 @@ color: #050505;
     z-index: 100;
     display: flex;
     flex-wrap: nowrap;
-    overflow:scroll;
+    overflow: scroll;
     padding-bottom: 30px;
 }
 
 .rectangleCarouselTwo {
     height: 112px;
+    position: absolute;
     transform: rotate(24.61deg);
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
     margin-left: -100px;
@@ -995,15 +1036,15 @@ color: #050505;
     background-position: center;
     width: 300%;
     background-position: center;
-    margin-top:-50px;
+    margin-top: -50px;
 }
 
 .elementoTwo {
     background-image: url(../images/Vector_carrusel2.png);
-	flex: 1 0 auto;
-	margin: 0 10px;
-	width: 171px;
-	height: 192px;
+    flex: 1 0 auto;
+    margin: 0 10px;
+    width: 171px;
+    height: 192px;
     box-shadow: 1px 6px 5px -1px rgba(122, 115, 115, 0.82);
     -webkit-box-shadow: 1px 6px 5px -1px rgba(122, 115, 115, 0.82);
     -moz-box-shadow: 1px 6px 5px -1px rgba(122, 115, 115, 0.82);
@@ -1014,8 +1055,8 @@ color: #050505;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
-   
-    
+
+
 }
 
 .elementoTwo p {
@@ -1046,7 +1087,7 @@ color: #050505;
 
 .thirdSectionIndex footer .footerTitle {
     width: 100%;
-    padding:0 10px;
+    padding: 0 10px;
     text-align: center;
     font-style: normal;
     font-weight: 700;
@@ -1080,6 +1121,16 @@ color: #050505;
     background-repeat: no-repeat;
 }
 
+@media (max-width:1439px) {
+    .carrousel {
+        display: none;
+    }
+
+    .carrouselTwo {
+        display: none;
+    }
+}
+
 /* @media (min-width: 391px) {
     .rectangleCarouselOne {
         display: none;
@@ -1089,6 +1140,8 @@ color: #050505;
         display: none;
     }
 } */
+
+
 
 /* ESTILOS ABOUT */
 
@@ -1120,7 +1173,7 @@ color: #050505;
     z-index: 10;
     background-image: url(../images/pan.png);
     width: 90%;
-    border-radius:10px;
+    border-radius: 10px;
     height: 160px;
     background-position: center;
     background-size: cover;
@@ -1130,6 +1183,7 @@ color: #050505;
     align-items: center;
     margin-top: 120px;
 }
+
 .rectangleAboutOne {
     height: 112px;
     transform: rotate(17.6deg);
@@ -1152,10 +1206,10 @@ color: #050505;
 position: relative} */
 
 .firstSectionAbout main .heroImageAbout .imgPanUno {
-  /* margin-top: 70px;
+    /* margin-top: 70px;
   margin-bottom: 90px; */
 
-    padding: 10px; 
+    padding: 10px;
 }
 
 
@@ -1218,7 +1272,7 @@ position: relative} */
     margin-top: 70px;
     background-image: url(../images/pan.png);
     width: 90%;
-    border-radius:10px;
+    border-radius: 10px;
     height: 160px;
     background-position: center;
     background-size: cover;
@@ -1226,8 +1280,9 @@ position: relative} */
     justify-content: center;
     display: flex;
     align-items: center;
-    margin-bottom:32px;
+    margin-bottom: 32px;
 }
+
 .rectangleAboutTwo {
     height: 112px;
     transform: rotate(17.6deg);
@@ -1356,6 +1411,7 @@ position: relative} */
     justify-content: center;
     text-align: center;
 }
+
 .rectangleContact {
     height: 112px;
     transform: rotate(-5.78deg);
@@ -1365,7 +1421,7 @@ position: relative} */
     background-position: center;
     width: 300%;
     background-position: center;
-    margin-top:-130px;
+    margin-top: -130px;
 }
 
 
@@ -1373,10 +1429,10 @@ position: relative} */
     width: 100%;
     padding: 0 10px;
     font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
 }
 
 
@@ -1385,11 +1441,11 @@ color: #000000;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
-    line-height: 24px; 
+    line-height: 24px;
     text-align: center;
     color: #000000;
     width: 100%;
-    padding:0 10px;
+    padding: 0 10px;
     margin-top: -5px;
 }
 
@@ -1404,14 +1460,14 @@ color: #000000;
 
 } */
 
-.mainContact main .formularioContact  {
+.mainContact main .formularioContact {
     z-index: 100;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
     padding: 0 15px;
-    
+
 }
 
 fieldset {
@@ -1421,7 +1477,7 @@ fieldset {
 
 
 .mainContact main .formularioContact form .formFieldset fieldset input {
-    
+
     border: 0;
     font-style: normal;
     font-weight: 400;
@@ -1497,8 +1553,8 @@ fieldset {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding: 8px 8px;    
-background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+    padding: 8px 8px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
     text-align: center;
 }
 
@@ -1593,7 +1649,7 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rg
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    margin-bottom:32px;
+    margin-bottom: 32px;
 }
 
 .mainHow .eclipseOrder {
@@ -1607,7 +1663,7 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rg
     position: relative;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
@@ -1660,6 +1716,7 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rg
     z-index: 10;
     background-image: url(../images/prods_frozen.png);
 }
+
 .mainProduct main .prodThree {
     background-image: url(../images/prods_bakery.png);
 }
@@ -1669,7 +1726,7 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rg
 }
 
 .mainProduct main .prodsDiv {
-    z-index: 10; 
+    z-index: 10;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1680,92 +1737,92 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rg
     font-style: normal;
 }
 
-@media (max-width: 1439px){
+@media (max-width: 1439px) {
 
 
-.mainProduct main .gridProds {
-    padding-top: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+    .mainProduct main .gridProds {
+        padding-top: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
-.mainProduct main .productMainH1 {
-    text-align: center;
-    width: 100%;
-    padding:0 10px;
-    height: 36px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-}
+    .mainProduct main .productMainH1 {
+        text-align: center;
+        width: 100%;
+        padding: 0 10px;
+        height: 36px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+    }
 
-.mainProduct main .productMainH1Desktop {
-    display:none;
-}
+    .mainProduct main .productMainH1Desktop {
+        display: none;
+    }
 
-.mainProduct main a {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .mainProduct main a {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.mainProduct main .prodsDiv {
-    display: flex;
-    align-items: end;
-    height: 188px;
-    width: 90%;
-    margin-bottom:32px;
-}
+    .mainProduct main .prodsDiv {
+        display: flex;
+        align-items: end;
+        height: 188px;
+        width: 90%;
+        margin-bottom: 32px;
+    }
 
-.mainProduct main .rectangleProdsOne {
-    height: 112px;
-    transform: rotate(34.93deg);
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
-    margin-left: -100px;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    width: 300%;
-    background-position: center;
-    margin-bottom: 450px;
-}
+    .mainProduct main .rectangleProdsOne {
+        height: 112px;
+        transform: rotate(34.93deg);
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+        margin-left: -100px;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 300%;
+        background-position: center;
+        margin-bottom: 450px;
+    }
 
-.mainProduct main .rectangleProdsTwo {
-    height: 112px;
-    transform: rotate(34.93deg);
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
-    margin-left: -100px;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    width: 300%;
-    background-position: center;
-    margin-top: 250px;
-}
+    .mainProduct main .rectangleProdsTwo {
+        height: 112px;
+        transform: rotate(34.93deg);
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+        margin-left: -100px;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 300%;
+        background-position: center;
+        margin-top: 250px;
+    }
 
-.mainProduct main .prodsDiv p {
-    padding-left: 16px;
-    font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #FFFFFF;
-}
+    .mainProduct main .prodsDiv p {
+        padding-left: 16px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+    }
 
-.mainProduct main .prodOne {
-    margin-top:32px;
-}
+    .mainProduct main .prodOne {
+        margin-top: 32px;
+    }
 
-.footerProds {
-   
-    display: none;
-}
+    .footerProds {
+
+        display: none;
+    }
 
 }
 
@@ -1780,72 +1837,10 @@ color: #FFFFFF;
 /* ESTILOS ORDER */
 .firstSectionOrder {
     background: #FDF9F7;
-}
-
-.firstSectionOrder main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: 100%;
     overflow: hidden;
-    align-items: center;
-}
-
-.firstSectionOrder h1 {
-    margin-top:32px;
-    width: 100%;
-    padding:0 10px;
-    text-align: center;
-    height: 36px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: #000000;
-}
-
-.imagesOrder {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 600px;
-    margin-top: 20px;
-    justify-content: space-around;
-    
-}
-.imagesOrder .imageWhatsapp {
-    background-image: url(../images/whatsapp_img.png);
-    width: 64px;
-    height: 64.44px;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-.imagesOrder .imagePedidosya {
-    background-image: url(../images/pedidos_ya_img.png);
-    width: 64px;
-    height: 64.44px;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-.imagesOrder .imageRappi {
-    background-image: url(../images/rappi_img.png);
-    width: 150.86px;
-    height: 64.44px;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-}
-
-.firstSectionOrder .circleOrder {
-    background-image: url(../images/eclipse_orange_index.png);
-    width: 100%;
-    height: 100px;
-    background-size: cover;
-    position: relative;
 }
 
 .secondSectionOrder {
@@ -1860,150 +1855,235 @@ color: #FFFFFF;
     overflow: hidden;
 }
 
-/* .secondSectionOrder .sectionTakeAway {
-    background-image: url(../images/Rectangle\ 2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 144px;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    color: #FFFFFF;
-} */
-.secondSectionOrder .sectionTakeAway h2 {
-    margin-top: 40px;
-    width: 100%;
-    padding: 0 10px;
-    font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #2F2F2F;
-}
-.secondSectionOrder .sectionTakeAway p {
-    font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: #2F2F2F;
-    width: 100%;
-    padding: 0 10px;
-}
-.secondSectionOrder .iconLocation {
-    margin-top: 72px;
-}
-.secondSectionOrder .iconTimer {
-    margin-top: 50px;
-}
-.secondSectionOrder .iconDelivery {
-    margin-top: 49px;
+@media (max-width: 1439px){
+    .firstSectionOrder {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .firstSectionOrder h1 {
+        margin-top: 32px;
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+        height: 36px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+    }
+    
+    .imagesOrder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+        margin-top: 20px;
+        justify-content: space-around;
+    
+    }
+    
+    .imagesOrder .imageWhatsapp {
+        background-image: url(../images/whatsapp_img.png);
+        width: 64px;
+        height: 64.44px;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+    
+    .imagesOrder .imagePedidosya {
+        background-image: url(../images/pedidos_ya_img.png);
+        width: 64px;
+        height: 64.44px;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+    
+    .imagesOrder .imageRappi {
+        background-image: url(../images/rappi_img.png);
+        width: 150.86px;
+        height: 64.44px;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+    
+    .firstSectionOrder .circleOrder {
+        background-image: url(../images/eclipse_orange_index.png);
+        width: 100%;
+        height: 100px;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .secondSectionOrder {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FDF9F7;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    /* .secondSectionOrder .sectionTakeAway {
+        background-image: url(../images/Rectangle\ 2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 144px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        color: #FFFFFF;
+    } */
+    .secondSectionOrder .sectionTakeAway h2 {
+        margin-top: 40px;
+        width: 100%;
+        padding: 0 10px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #2F2F2F;
+    }
+    
+    .secondSectionOrder .sectionTakeAway p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #2F2F2F;
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .secondSectionOrder .iconLocation {
+        margin-top: 72px;
+    }
+    
+    .secondSectionOrder .iconTimer {
+        margin-top: 50px;
+    }
+    
+    .secondSectionOrder .iconDelivery {
+        margin-top: 49px;
+    }
+    
+    .secondSectionOrder .locationP {
+        margin-top: 16px;
+        width: 100%;
+        padding: 0 10px;
+        height: 48px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .secondSectionOrder .timerPOne {
+        margin-top: 16px;
+        width: 100%;
+        padding: 0 10px;
+        height: 48px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .secondSectionOrder .deliveryPOne {
+        margin-top: 17px;
+        width: 100%;
+        padding: 0 10px;
+        height: 72px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .secondSectionOrder .dividerOrder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .lineDivider {
+        width: 13px;
+        height: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    
+    .buttonOrderDiv {
+        margin: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-width: 0px;
+    }
+    
+    .btnOrder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        width: 158px;
+        height: 44px;
+        background: #F2A654;
+        border-radius: 100px;
+        border-width: 0px;
+    }
+    
+    .btnOrder a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #050505;
+    }
 }
 
-.secondSectionOrder .locationP {
-    margin-top: 16px;
-    width: 100%;
-    padding: 0 10px;
-height: 48px;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: #000000;
-}
-.secondSectionOrder .timerPOne {
-    margin-top: 16px;
-    width: 100%;
-    padding: 0 10px;
-height: 48px;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: #000000;
-}
 
-.secondSectionOrder .deliveryPOne {
-    margin-top: 17px;
-    width: 100%;
-    padding: 0 10px;
-height: 72px;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: #000000;
-}
-
-.secondSectionOrder .dividerOrder {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-}
-
-.lineDivider {
-    width: 13px;
-height: 24px;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: #000000;
-    margin-right: 30px;
-    margin-left: 30px;
-    padding-top:10px;
-}
-
-.buttonOrderDiv {
-    margin: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-width: 0px;
-}
-
-.btnOrder {
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 8px;
-width: 158px;
-height: 44px;
-background: #F2A654;
-border-radius: 100px;
-border-width: 0px;
-}
-
-.btnOrder a {
-    font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.1px;
-color: #050505;
-}
 
 /* ESTILOS CARPETA PRODUCTS */
 /* Favs */
 
-.firstSectionFavs{
+.firstSectionFavs {
     background: #FDF9F7;
 }
-.firstSectionFavs{
+
+.firstSectionFavs {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2013,32 +2093,32 @@ color: #050505;
 }
 
 
-@media (max-width: 1439px){
-    .firstSectionFavs{
-       
+@media (max-width: 1439px) {
+    .firstSectionFavs {
+
         justify-content: center;
-       
+
     }
-    
-    
-    .firstSectionFavs  h1 {
-        margin-top:32px;
+
+
+    .firstSectionFavs h1 {
+        margin-top: 32px;
         width: 100%;
         padding: 0 10px;
-    height: 36px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: #2F2F2F;
+        height: 36px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #2F2F2F;
     }
-    
-    .firstSectionFavs  .titleFavs {
+
+    .firstSectionFavs .titleFavs {
         z-index: 10;
         margin-top: 42px;
         background-image: url(../images/prods_favs.png);
         width: 90%;
-        border-radius:5px;
+        border-radius: 5px;
         height: 188px;
         background-position: center;
         background-size: cover;
@@ -2046,8 +2126,9 @@ color: #050505;
         justify-content: center;
         display: flex;
         align-items: center;
-        margin-bottom:32px;
+        margin-bottom: 32px;
     }
+
     .rectangleFavs {
         height: 112px;
         transform: rotate(-24.61deg);
@@ -2060,6 +2141,7 @@ color: #050505;
         margin-top: -150px;
         margin-bottom: 50px;
     }
+
     /* .rectangleFavs {
         position: absolute;
         height: 250px;
@@ -2074,13 +2156,13 @@ color: #050505;
         margin-bottom:150px;
         background-image: url(../images/rectangle_contact_two.png);
     }  */
-    
+
     .firstSectionFavs .titleFavs .h2FavsMobile {
         font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: #FFFFFF;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
     }
 
     .titleFavs .h2FavDesktop {
@@ -2091,8 +2173,8 @@ color: #050505;
         display: none;
     }
 
-    
-    .firstSectionFavs  .listOne div h3 {
+
+    .firstSectionFavs .listOne div h3 {
         z-index: 20;
         font-style: normal;
         font-weight: 700;
@@ -2104,8 +2186,8 @@ color: #050505;
         width: 100%;
         padding: 0 10px;
     }
-    
-    .firstSectionFavs  .listOne div p {
+
+    .firstSectionFavs .listOne div p {
         z-index: 20;
         font-style: normal;
         font-weight: 400;
@@ -2116,9 +2198,9 @@ color: #050505;
         width: 95%;
         padding: 0 10px;
     }
-    
-    
-    
+
+
+
     .firstSectionFavs .divSeven p {
         font-style: normal;
         font-weight: 700;
@@ -2130,72 +2212,88 @@ color: #050505;
         width: 100%;
         padding: 0 10px;
     }
-    
+
     .btnOrderTwoFavs {
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    margin: 48px;
-    position: relative;
-    width: 143px;
-    height: 44px;
-    border-width: 0px;
-    background: #F2A654;
-    border-radius: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        margin: 48px;
+        position: relative;
+        width: 143px;
+        height: 44px;
+        border-width: 0px;
+        background: #F2A654;
+        border-radius: 100px;
     }
-    
+
     .btnOrderTwoFavs a {
         font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.1px;
-    color: #050505;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #050505;
     }
-    
+
 }
 
 
 /* Frozen */
 
-/* @media (max-width:1439px){ */
+
+@media (max-width:1439px) {
     .firstSectionFrozen {
         background: #FDF9F7;
-    }
-    .firstSectionFrozen main {
-        
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        height: 100%;
         overflow: hidden;
+        text-align: center;
     }
-    
+
+    .h2FrozenDesktop {
+        display: none;
+    }
+
+    .titleEmpanadasDesktop {
+        display: none;
+    }
+
+    .divEmpanadas h3 {
+        display: none;
+    }
+
+    .imgEmpanadasDesktop {
+        display: none;
+    }
+
+
+
     .firstSectionFrozen h1 {
-        margin-top:32px;
+        margin-top: 32px;
         width: 220px;
-    height: 36px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: #2F2F2F;
+        height: 36px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #2F2F2F;
     }
-    
+
     .titleEmpanadas {
         z-index: 10;
         margin-top: 42px;
         background-image: url(../images/frozen_one.png);
         width: 90%;
-        border-radius:10px;
+        border-radius: 10px;
         height: 188px;
         background-position: center;
         background-size: cover;
@@ -2203,8 +2301,10 @@ color: #050505;
         justify-content: center;
         display: flex;
         align-items: center;
-        margin-bottom:32px;
+        margin-bottom: 32px;
     }
+
+
     .rectangleFrozen {
         height: 112px;
         transform: rotate(-24.61deg);
@@ -2217,55 +2317,62 @@ color: #050505;
         margin-top: -150px;
         margin-bottom: 20px;
     }
-    
-    
+
+
     .titleEmpanadas h2 {
         font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: #FFFFFF;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
     }
-    
-    .divEmpanadas  {
-        margin-top:33px;
+
+    .divEmpanadas {
+        margin-top: 33px;
         font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
     }
-    
-    .btnFrozen{
+
+    .btnFrozenDiv {
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    margin-top: 72px;
-    margin-bottom:50px;
-    position: relative;
-    width: 143px;
-    height: 44px;
-    border-width: 0px;
-    background: #F2A654;
-    border-radius: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    
+
+    .btnFrozen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        margin-top: 72px;
+        margin-bottom: 50px;
+        position: relative;
+        width: 143px;
+        height: 44px;
+        border-width: 0px;
+        background: #F2A654;
+        border-radius: 100px;
+    }
+
     .btnFrozen a {
         font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.1px;
-    color: #050505;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #050505;
     }
-    
+
     .secondSectionFrozen {
         background: #FDF9F7;
         display: flex;
@@ -2276,14 +2383,14 @@ color: #050505;
         height: 100%;
         overflow: hidden;
     }
-    
-    
+
+
     .titleRebozados {
         z-index: 10;
         margin-top: 42px;
         background-image: url(../images/frozen_two.png);
         width: 90%;
-        border-radius:10px;
+        border-radius: 10px;
         height: 188px;
         background-position: center;
         background-size: cover;
@@ -2291,8 +2398,17 @@ color: #050505;
         justify-content: center;
         display: flex;
         align-items: center;
-        margin-bottom:32px;
+        margin-bottom: 32px;
     }
+
+    .titleRebozados p {
+        display: none;
+    }
+
+    .imgRebozados {
+        display: none;
+    }
+
     .rectangleFrozenTwo {
         height: 112px;
         transform: rotate(-24.61deg);
@@ -2304,55 +2420,55 @@ color: #050505;
         background-position: center;
         margin-top: -135px;
     }
-    
-    
+
+
     .titleRebozados h2 {
         font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: #FFFFFF;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
     }
-    
-    .divRebozados  {
-        margin-top:144px;
+
+    .divRebozados {
+        margin-top: 144px;
         font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
     }
-    
+
     .btnFrozenTwo {
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    margin-top: 144px;
-    margin-bottom:108px;
-    position: relative;
-    width: 143px;
-    height: 44px;
-    border-width: 0px;
-    background: #F2A654;
-    border-radius: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        margin-top: 144px;
+        margin-bottom: 108px;
+        position: relative;
+        width: 143px;
+        height: 44px;
+        border-width: 0px;
+        background: #F2A654;
+        border-radius: 100px;
     }
-    
+
     .btnFrozenTwo a {
         font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.1px;
-    color: #050505;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #050505;
     }
-    
+
     .thirdSectionFrozen {
         background: #FDF9F7;
         display: flex;
@@ -2363,13 +2479,13 @@ color: #050505;
         height: 100%;
         overflow: hidden;
     }
-    
+
     .titlePrepizza {
         z-index: 10;
         margin-top: 42px;
         background-image: url(../images/frozen_three.png);
         width: 90%;
-        border-radius:10px;
+        border-radius: 10px;
         height: 188px;
         background-position: center;
         background-size: cover;
@@ -2377,8 +2493,17 @@ color: #050505;
         justify-content: center;
         display: flex;
         align-items: center;
-        margin-bottom:32px;
+        margin-bottom: 32px;
     }
+
+    .titlePrepizza p {
+        display: none;
+    }
+
+    .imgPrepizza {
+        display: none;
+    }
+
     .rectangleFrozenThree {
         height: 112px;
         transform: rotate(-24.61deg);
@@ -2390,579 +2515,662 @@ color: #050505;
         background-position: center;
         margin-top: -130px;
     }
-    
-    
+
+
     .titlePrepizza h2 {
         font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: #FFFFFF;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
     }
-    
-    .divPrepizza  {
-        margin-top:204px;
+
+    .divPrepizza {
+        margin-top: 204px;
         font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
     }
-    
+
     .btnFrozenThree {
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    margin-top: 204px;
-    margin-bottom:108px;
-    position: relative;
-    width: 143px;
-    height: 44px;
-    border-width: 0px;
-    background: #F2A654;
-    border-radius: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        margin-top: 204px;
+        margin-bottom: 108px;
+        position: relative;
+        width: 143px;
+        height: 44px;
+        border-width: 0px;
+        background: #F2A654;
+        border-radius: 100px;
     }
-    
+
     .btnFrozenThree a {
         font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.1px;
-    color: #050505;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #050505;
     }
-    
-/* }
- */
+
+}
+
 
 /* Bakery */
 
 .firstSectionBakery {
     background: #FDF9F7;
-} 
+}
 
-.firstSectionBakery main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.firstSectionBakery {
     height: 100%;
     overflow: hidden;
 }
 
-.firstSectionBakery h1 {
-    margin-top:32px;
-    width: 220px;
-height: 36px;
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #2F2F2F;
+@media (max-width: 1439px) {
+    .firstSectionBakery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .h2BakeryDesktop {
+        display: none;
+    }
+
+    .divPanaderia h3 {
+        display: none;
+    }
+
+    .imgBakeryOneDk {
+        display: none;
+    }
+
+    .firstSectionBakery h1 {
+        margin-top: 32px;
+        width: 220px;
+        height: 36px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #2F2F2F;
+    }
+
+    .titlePanaderia {
+        z-index: 10;
+        margin-top: 42px;
+        background-image: url(../images/bakery_one.png);
+        width: 90%;
+        border-radius: 10px;
+        height: 188px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    .rectangleBakery {
+        height: 112px;
+        transform: rotate(-24.61deg);
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+        margin-left: -100px;
+        background-size: cover;
+        background-position: center;
+        width: 300%;
+        background-position: center;
+        margin-top: -150px;
+    }
+
+    .titlePanaderia h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+    }
+
+    .divPanaderia {
+        margin-top: 33px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .btnBakeryDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnBakeryDiv .btnBakery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        margin-top: 32px;
+        margin-bottom: 50px;
+        position: relative;
+        width: 143px;
+        height: 44px;
+        border-width: 0px;
+        background: #F2A654;
+        border-radius: 100px;
+    }
+
+    .btnBakery a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #050505;
+    }
+
+    .secondSectionBakery {
+        background: #FDF9F7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .titleTortas {
+        z-index: 10;
+        margin-top: 42px;
+        background-image: url(../images/bakery_two.png);
+        width: 90%;
+        border-radius: 10px;
+        height: 188px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    .rectangleBakeryTwo {
+        height: 112px;
+        transform: rotate(-24.61deg);
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+        margin-left: -100px;
+        background-size: cover;
+        background-position: center;
+        width: 300%;
+        background-position: center;
+        margin-top: -130px;
+        margin-bottom: 20px;
+    }
+
+
+    .titleTortas h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+    }
+
+    .secondSectionBakery .listOne div {
+        margin-bottom: 32px;
+        z-index: 20;
+
+
+    }
+
+    .secondSectionBakery .listOne div h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+        line-height: 24px;
+        z-index: 20;
+    }
+
+    .secondSectionBakery .listOne div p {
+        z-index: 20;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #000000;
+        padding: 0 20px;
+    }
+
+    .btnBakeryTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        position: relative;
+        width: 143px;
+        height: 44px;
+        border-width: 0px;
+        background: #F2A654;
+        border-radius: 100px;
+    }
+
+    .btnBakeryTwo a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #050505;
+    }
+
+    .imgBakeryDkTwo {
+        display: none;
+    }
 }
 
-.titlePanaderia {
-    z-index: 10;
-    margin-top: 42px;
-    background-image: url(../images/bakery_one.png);
-    width: 90%;
-    border-radius:10px;
-    height: 188px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-bottom:32px;
-}
-.rectangleBakery {
-    height: 112px;
-    transform: rotate(-24.61deg);
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
-    margin-left: -100px;
-    background-size: cover;
-    background-position: center;
-    width: 300%;
-    background-position: center;
-    margin-top:-150px;
-}
-.titlePanaderia h2 {
-    font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #FFFFFF;
-}
-
-.divPanaderia  {
-    margin-top:33px;
-    font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: #000000;
-}
-
-.btnBakery{
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 8px;
-margin-top: 32px;
-margin-bottom:50px;
-position: relative;
-width: 143px;
-height: 44px;
-border-width: 0px;
-background: #F2A654;
-border-radius: 100px;
-}
-
-.btnBakery a {
-    font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.1px;
-color: #050505;
-}
-
-.secondSectionBakery {
-    background: #FDF9F7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    overflow: hidden;
-}
-
-.titleTortas {
-    z-index: 10;
-    margin-top: 42px;
-    background-image: url(../images/bakery_two.png);
-    width: 90%;
-    border-radius:10px;
-    height: 188px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-bottom:32px;
-}
-.rectangleBakeryTwo {
-    height: 112px;
-    transform: rotate(-24.61deg);
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
-    margin-left: -100px;
-    background-size: cover;
-    background-position: center;
-    width: 300%;
-    background-position: center;
-    margin-top: -130px;
-    margin-bottom: 20px;
-}
-
-
-.titleTortas h2 {
-    font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #FFFFFF;
-}
-
-.secondSectionBakery .listOne div {
-    margin-bottom:32px;
-    z-index: 20;
-   
-
-}
-.secondSectionBakery .listOne div h3 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    line-height: 24px;
-    z-index: 20;
-}
-
-.secondSectionBakery .listOne div p {
-    z-index: 20;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    color: #000000;
-    padding:0 20px;
-}
-
-.btnBakeryTwo {
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 8px;
-margin-top: 15px;
-margin-bottom:50px;
-position: relative;
-width: 143px;
-height: 44px;
-border-width: 0px;
-background: #F2A654;
-border-radius: 100px;
-}
-
-.btnBakeryTwo a {
-    font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.1px;
-color: #050505;
-}
 
 /* Lunches */
-
 .firstSectionLunch {
     background: #FDF9F7;
 }
 
-.firstSectionLunch main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.firstSectionLunch {
     height: 100%;
     overflow: hidden;
-}
-
-.firstSectionLunch h1 {
-    margin-top:32px;
-    width: 220px;
-height: 36px;
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #2F2F2F;
 }
 
 .titleSandwiches {
     z-index: 10;
     margin-top: 42px;
-    background-image: url(../images/lunches_one.png);
-    width: 90%;
-    border-radius:10px;
-    height: 188px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
     display: flex;
     align-items: center;
-    margin-bottom:32px;
-}
-.rectangleLunches {
-    height: 112px;
-    transform: rotate(-24.61deg);
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
-    margin-left: -100px;
-    background-size: cover;
-    background-position: center;
-    width: 300%;
-    background-position: center;
-    margin-top: -150px;
+    margin-bottom: 32px;
 }
 
-.titleSandwiches h2 {
-    font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #FFFFFF;
-}
+@media (max-width:1439px) {
+    .h2LunchDesk {
+        display: none;
+    }
 
-.firstSectionLunch .listOne  {
-    margin-top:32px;
-    margin-bottom: 50px;
-}
-.firstSectionLunch .listOne div h3 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    line-height: 24px;
-    padding-bottom:10px;
-}
+    .h3LunchDesk {
+        display: none;
+    }
 
-.firstSectionLunch .listOne div p {
-    
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    color: #000000;
-    padding:0 10px;
-    margin-bottom: 50px;
-}
+    .imgLunchDesk {
+        display: none;
+    }
 
+    .secondSectionLunch .listTwo h2 {
+         display: none;
+    }
 
-.btnLunch{
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 8px;
-margin-top:-50px;
-margin-bottom:51px;
-position: relative;
-width: 143px;
-height: 44px;
-border-width: 0px;
-background: #F2A654;
-border-radius: 100px;
-}
+    .secondSectionLunch .imgLunchTwo {
+        display: none;
+    }
 
-.btnLunch a {
-    font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.1px;
-color: #050505;
-}
+    .thirdSectionLunch .imgLunchThree {
+        display: none;
+    }
 
-.secondSectionLunch {
-    background: #FDF9F7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    overflow: hidden;
-}
+    .btnLunchDiv {
+        padding-top: 52px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-.titleWraps {
-    z-index: 10;
-    margin-top: 42px;
-    background-image: url(../images/lunches_two.png);
-    width: 90%;
-    border-radius:10px;
-    height: 188px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-bottom:32px;
-}
-.rectangleLunchesTwo {
-    height: 112px;
-    transform: rotate(-24.61deg);
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
-    margin-left: -100px;
-    background-size: cover;
-    background-position: center;
-    width: 300%;
-    background-position: center;
-    margin-top: -130px;
-}
+    .firstSectionLunch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
-.titleWraps h2 {
-    font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #FFFFFF;
-}
-.secondSectionLunch .listTwo{
-    margin-top: 144px;
-    margin-bottom:146px;
-}
-.secondSectionLunch .listTwo div h3 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    line-height: 24px;
-    padding-bottom:10px;
-}
+    .firstSectionLunch h1 {
+        margin-top: 32px;
+        width: 220px;
+        height: 36px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #2F2F2F;
+    }
 
-.secondSectionLunch .listTwo div p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    color: #000000;
-    padding:0 10px;
-}
+    .titleSandwiches {
+        background-image: url(../images/lunches_one.png);
+        width: 90%;
+        border-radius: 10px;
+        height: 188px;
+        background-position: center;
+        margin-bottom: 32px;
+    }
 
-.btnLunchTwo {
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 8px;
-margin-bottom:108px;
-position: relative;
-width: 143px;
-height: 44px;
-border-width: 0px;
-background: #F2A654;
-border-radius: 100px;
-}
+    .rectangleLunches {
+        height: 112px;
+        transform: rotate(-24.61deg);
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+        margin-left: -100px;
+        background-size: cover;
+        background-position: center;
+        width: 300%;
+        background-position: center;
+        margin-top: -150px;
+    }
 
-.btnLunchTwo a {
-    font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.1px;
-color: #050505;
-}
+    .titleSandwiches h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+    }
 
-.thirdSectionLunch {
-    background: #FDF9F7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    overflow: hidden;
-}
+    .firstSectionLunch .listOne {
+        margin-top: 32px;
+        margin-bottom: 50px;
+    }
 
-.titleEnsaladas {
-    z-index: 10;
-    margin-top: 42px;
-    background-image: url(../images/lunches_three.png);
-    width: 90%;
-    border-radius:10px;
-    height: 188px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-bottom:32px;
-}
-.rectangleLunchesThree {
-    height: 112px;
-    transform: rotate(-24.61deg);
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
-    margin-left: -100px;
-    background-size: cover;
-    background-position: center;
-    width: 300%;
-    background-position: center;
-    margin-top: -130px;
-}
+    .firstSectionLunch .listOne div h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+        line-height: 24px;
+        padding-bottom: 10px;
+    }
+
+    .firstSectionLunch .listOne div p {
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #000000;
+        padding: 0 10px;
+        margin-bottom: 50px;
+    }
 
 
+    .btnLunch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        margin-top: -50px;
+        margin-bottom: 51px;
+        position: relative;
+        width: 143px;
+        height: 44px;
+        border-width: 0px;
+        background: #F2A654;
+        border-radius: 100px;
+    }
 
-.titleEnsaladas h2 {
-    font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #FFFFFF;
-}
+    .btnLunch a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #050505;
+    }
 
-.thirdSectionLunch .listThree div {
-    margin-top:10px;
-}
-.thirdSectionLunch .listThree div h3 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    line-height: 24px;
-    padding-bottom: 5px;
-}
+    .secondSectionLunch {
+        background: #FDF9F7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        overflow: hidden;
+    }
 
-.thirdSectionLunch .listThree div p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    color: #000000;
-    padding:0 10px;
-}
+    .titleWraps {
+        z-index: 10;
+        margin-top: 42px;
+        background-image: url(../images/lunches_two.png);
+        width: 90%;
+        border-radius: 10px;
+        height: 188px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
 
-.btnLunchThree {
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 8px;
-margin-top: 84px;
-margin-bottom:50px;
-position: relative;
-width: 143px;
-height: 44px;
-border-width: 0px;
-background: #F2A654;
-border-radius: 100px;
-}
+    .rectangleLunchesTwo {
+        height: 112px;
+        transform: rotate(-24.61deg);
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+        margin-left: -100px;
+        background-size: cover;
+        background-position: center;
+        width: 300%;
+        background-position: center;
+        margin-top: -130px;
+    }
 
-.btnLunchThree a {
-    font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.1px;
-color: #050505;
+    .titleWraps h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+    }
+
+    .secondSectionLunch .listTwo {
+        margin-top: 144px;
+        margin-bottom: 146px;
+    }
+
+    .secondSectionLunch .listTwo div h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+        line-height: 24px;
+        padding-bottom: 10px;
+    }
+
+    .secondSectionLunch .listTwo div p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #000000;
+        padding: 0 10px;
+    }
+
+    .btnLunchTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        margin-bottom: 108px;
+        position: relative;
+        width: 143px;
+        height: 44px;
+        border-width: 0px;
+        background: #F2A654;
+        border-radius: 100px;
+    }
+
+    .btnLunchTwo a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #050505;
+    }
+
+    .thirdSectionLunch {
+        background: #FDF9F7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .titleEnsaladas {
+        z-index: 10;
+        margin-top: 42px;
+        background-image: url(../images/lunches_three.png);
+        width: 90%;
+        border-radius: 10px;
+        height: 188px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    .rectangleLunchesThree {
+        height: 112px;
+        transform: rotate(-24.61deg);
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
+        margin-left: -100px;
+        background-size: cover;
+        background-position: center;
+        width: 300%;
+        background-position: center;
+        margin-top: -130px;
+    }
+
+
+
+    .titleEnsaladas h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+    }
+
+    .thirdSectionLunch .listThree div {
+        margin-top: 10px;
+    }
+
+    .thirdSectionLunch .listThree div h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+        line-height: 24px;
+        padding-bottom: 5px;
+    }
+
+    .thirdSectionLunch .listThree div p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #000000;
+        padding: 0 10px;
+    }
+
+    .btnLunchThree {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        margin-top: 84px;
+        margin-bottom: 50px;
+        position: relative;
+        width: 143px;
+        height: 44px;
+        border-width: 0px;
+        background: #F2A654;
+        border-radius: 100px;
+    }
+
+    .btnLunchThree a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #050505;
+    }
+
 }
 
 
@@ -2972,7 +3180,7 @@ color: #050505;
 
     .mainProduct main .gridProds {
         display: grid;
-        grid-template-columns:  1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 30px 30px;
         margin-bottom: 92px;
@@ -2986,11 +3194,11 @@ color: #050505;
     }
 
     .mainProduct main .productMainH1Desktop {
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top:60px;
-        margin-bottom:100px;
+        margin-top: 60px;
+        margin-bottom: 100px;
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
@@ -3019,21 +3227,21 @@ color: #050505;
         justify-self: left;
     }
 
-    .mainProduct main .prodsDiv{
-       height:285px;
-       width: 543px;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
+    .mainProduct main .prodsDiv {
+        height: 285px;
+        width: 543px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .mainProduct main .prodsDiv p {
         font-weight: 600;
-font-size: 32px;
-line-height: 48px;
-text-align: center;
-color: #FDF9F7;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        color: #FDF9F7;
     }
 
     .footerProds {
@@ -3053,7 +3261,7 @@ color: #FDF9F7;
         display: flex;
         align-items: center;
         text-align: center;
-        
+
         color: #000000;
     }
 
@@ -3063,9 +3271,9 @@ color: #FDF9F7;
 }
 
 /* Media queries products --> fav */
-@media (min-width:1440px){
+@media (min-width:1440px) {
 
- 
+
     .firstSectionFavs h1 {
         display: none;
     }
@@ -3087,108 +3295,823 @@ color: #FDF9F7;
     .h2FavsMobile {
         display: none;
     }
+
     .titleFavs .h2FavDesktop {
         font-style: normal;
-font-weight: 700;
-font-size: 68px;
-line-height: 102px;
-text-align: center;
-letter-spacing: 0.24em;
-color: #FDF9F7;
+        font-weight: 700;
+        font-size: 68px;
+        line-height: 102px;
+        text-align: center;
+        letter-spacing: 0.24em;
+        color: #FDF9F7;
     }
 
     .rectangleFavs {
         background: radial-gradient(50% 50% at 50% 50%, rgba(255, 179, 206, 0.36) 0%, rgba(255, 227, 179, 0.36) 100%);
-filter: blur(20px);
-border-radius: 26px;
-transform: rotate(-18.18deg);
+        filter: blur(20px);
+        border-radius: 26px;
+        transform: rotate(-18.18deg);
         background-size: cover;
         background-position: center;
-        width:350%;
+        width: 120%;
         height: 266.1px;
         position: absolute;
         background-position: center;
-        top:150%;
+        top: 150%;
     }
 
     .containerFavsDesktop {
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 0.5fr 0.5fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          "divSeven imgFavsDesktop"
-          "listOne imgFavsDesktop"
-          
-          ; 
-      }
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 0.2fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "divSeven imgFavsDesktop"
+            "listOne imgFavsDesktop"
+            "btnOrderTwoFavs btnOrderTwoFavs"
 
-    
-      .divSeven {
+        ;
+    }
+
+
+    .divSeven {
         align-self: center;
-       margin-top:147px;
-         grid-area: divSeven;
-        margin-bottom: 10px; }
-      .listOne { 
+        margin-top: 147px;
+        grid-area: divSeven;
+        margin-bottom: 10px;
+    }
+
+    .containerFavsDesktop .listOne {
         align-self: center;
         grid-area: listOne;
-}
-      .imgFavsDesktop { align-self: center;
+    }
+
+    .imgFavsDesktop {
+        padding-top: 50px;
+        align-self: center;
         justify-self: center;
         z-index: 30;
-        grid-area: imgFavsDesktop; }
+        grid-area: imgFavsDesktop;
+    }
 
-      .firstSectionFavs .listOne {
+    .firstSectionFavs .listOne {
         display: flex;
         flex-direction: column;
         text-align: start;
         width: 110%;
         padding: 0 162px;
-      }
-
-      .firstSectionFavs .listOne div {
-        padding-bottom: 35px;
-        z-index: 20;
-      }
-      
-      .firstSectionFavs .listOne div h3 {
-        z-index: 20;
-        font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 36px;
-color: #2F2F2F;
     }
 
-    .firstSectionFavs  .listOne div p {
+    .firstSectionFavs .listOne div {
+        z-index: 20;
+    }
+
+    .firstSectionFavs .listOne div h3 {
         z-index: 20;
         font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 36px;
-color: #2F2F2F;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 36px;
+        color: #2F2F2F;
+    }
+
+    .firstSectionFavs .listOne div p {
+        z-index: 20;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        color: #2F2F2F;
         width: 90%;
-        
+
     }
 
-    .firstSectionFavs  .divSeven {
+    .firstSectionFavs .divSeven {
         display: flex;
         flex-direction: column;
         text-align: start;
         padding: 0 162px;
     }
 
-    .firstSectionFavs  .divSeven p {
+    .firstSectionFavs .divSeven p {
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
         line-height: 56px;
-        color: #2F2F2F; 
+        color: #2F2F2F;
     }
 
-    
-    
-   .btnOrderTwoFavs {
+
+
+    .btnOrderTwoFavs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        width: 200px;
+        position: absolute;
+        height: 44px;
+        background: #F2A654;
+        border-radius: 100px;
+        border: 0;
+        position: relative;
+        margin-bottom: 150px;
+        grid-area: btnOrderTwoFavs;
+    }
+
+    .btnOrderTwoFavs a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #2F2F2F;
+    }
+}
+
+/* Media queries products --> frozen */
+@media (min-width:1440px) {
+    .firstSectionFrozen {
+        border-bottom: 2px solid rgba(255, 170, 136, 0.5);
+        ;
+    }
+
+    .firstSectionFrozen h1 {
+        display: none;
+    }
+
+    .titleEmpanadas {
+        z-index: 10;
+        margin-top: 42px;
+        background-image: url(../images/frozenDesktop.png);
+        width: 100%;
+        height: 312px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+
+    }
+
+    .h2FrozenMobile {
+        display: none;
+    }
+
+    .h2FrozenDesktop {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 68px;
+        line-height: 102px;
+        letter-spacing: 0.24em;
+        color: #FDF9F7;
+    }
+
+    .divEmpanadasDesktop {
+
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 1fr 0.4fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            " titleEmpanadasDesktop titleEmpanadasDesktop"
+            "divEmpanadas imgEmpanadasDesktop"
+            "btnFrozenDiv btnFrozenDiv"
+        ;
+    }
+
+    .titleEmpanadasDesktop {
+        grid-area: titleEmpanadasDesktop;
+        justify-self: center;
+        margin-right: 65%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        color: #2F2F2F;
+    }
+
+    .divEmpanadas {
+        grid-area: divEmpanadas;
+    }
+
+    .btnFrozenDiv {
+        grid-area: btnFrozenDiv;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgEmpanadasDesktop {
+        grid-area: imgEmpanadasDesktop;
+        align-self: baseline;
+    }
+
+    .divEmpanadas p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 56px;
+        color: #2F2F2F;
+        padding-bottom: 10px;
+    }
+
+    .btnFrozen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 200px;
+        height: 44px;
+        border: 0;
+        background: #F2A654;
+        border-radius: 100px;
+    }
+
+    .btnFrozen a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #2F2F2F;
+    }
+
+    /* Second section */
+
+    .thirdSectionFrozen {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". ."
+            "imgPrepizza titlePrepizza"
+            "btnFrozenThreeDiv btnFrozenThreeDiv";
+    }
+
+    .imgPrepizza {
+        grid-area: imgPrepizza;
+    }
+
+    .btnFrozenThreeDiv {
+        grid-area: btnFrozenThreeDiv;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titlePrepizza {
+        grid-area: titlePrepizza;
+    }
+
+    .titlePrepizza h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 150px;
+        display: flex;
+        align-items: center;
+        color: #2F2F2F;
+    }
+
+    .titlePrepizza p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 56px;
+        color: #2F2F2F;
+    }
+
+    .btnFrozenThree {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 200px;
+        height: 44px;
+        border: 0;
+        background: #F2A654;
+        border-radius: 100px;
+    }
+
+    .btnFrozenThree a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #2F2F2F;
+    }
+
+    .divPrepizza {
+        display: none;
+    }
+
+    /* Third section */
+
+    .secondSectionFrozen {
+        border-top: 2px solid rgba(255, 170, 136, 0.4);
+        ;
+    }
+
+    .secondSectionFrozen {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". ."
+            "titleRebozados imgRebozados"
+            "btnFrozenTwoDiv btnFrozenTwoDiv"
+        ;
+    }
+
+    .titleRebozados {
+        grid-area: titleRebozados;
+        height: 460px;
+    }
+
+    .imgRebozados {
+        grid-area: imgRebozados;
+    }
+
+    .btnFrozenTwoDiv {
+        grid-area: btnFrozenTwoDiv;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divRebozados {
+        display: none;
+    }
+
+    .titleRebozados h2 {
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 70px;
+        display: flex;
+        align-items: start;
+        color: #2F2F2F;
+        padding-bottom: 55px;
+    }
+
+    .titleRebozados p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 56px;
+        color: #2F2F2F;
+    }
+
+    .btnFrozenTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 200px;
+        height: 44px;
+        background: #F2A654;
+        border-radius: 100px;
+        border: 0;
+    }
+
+    .btnFrozenTwo a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #2F2F2F;
+    }
+}
+
+/* Media queries products --> bakery */
+@media (min-width:1440px) {
+    .firstSectionBakery {
+        border-bottom: 2px solid rgba(255, 170, 136, 0.4);
+        ;
+    }
+
+    .firstSectionBakery h1 {
+        display: none;
+    }
+
+    .firstSectionBakery .h2BakeryMobile {
+        display: none;
+    }
+
+    .titlePanaderia {
+        z-index: 10;
+        margin-top: 42px;
+        background-image: url(../images/BakeryDesktop.png);
+        width: 100%;
+        height: 312px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    .firstSectionBakery .titlePanaderia .h2BakeryDesktop {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 68px;
+        line-height: 102px;
+        text-align: center;
+        letter-spacing: 0.24em;
+        color: #FDF9F7;
+    }
+
+    .gridBakeryDesk {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". ."
+            "divPanaderia imgBakeryOneDk"
+            "btnBakeryDiv btnBakeryDiv";
+    }
+
+    .divPanaderia {
+        grid-area: divPanaderia;
+    }
+
+    .imgBakeryOneDk {
+        grid-area: imgBakeryOneDk;
+    }
+
+    .btnBakeryDiv {
+        grid-area: btnBakeryDiv;
+    }
+
+    .divPanaderia h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        display: flex;
+        align-items: center;
+        color: #2F2F2F;
+        margin-bottom: 50px;
+    }
+
+    .divPanaderia p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 56px;
+        color: #2F2F2F;
+    }
+
+    .btnBakery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 200px;
+        height: 44px;
+        left: 620px;
+        top: 1439px;
+        background: #F2A654;
+        border-radius: 100px;
+        border: 0;
+    }
+
+    .btnBakery a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #2F2F2F;
+    }
+
+    .secondSectionBakery {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.3fr 1fr 1fr 0.8fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". ."
+            "imgBakeryDkTwo titleTortas"
+            "imgBakeryDkTwo listOne"
+            "imgBakeryDkTwo listOne"
+            "btnBakeryTwoDiv btnBakeryTwoDiv";
+    }
+
+    .titleTortas {
+        grid-area: titleTortas;
+        width: 428px;
+    }
+
+    .secondSectionBakery .listOne {
+        grid-area: listOne;
+        width: 428px;
+    }
+
+    .imgBakeryDkTwo {
+        grid-area: imgBakeryDkTwo;
+    }
+
+    .btnBakeryTwoDiv {
+        grid-area: btnBakeryTwoDiv;
+    }
+
+    .titleTortas h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        display: flex;
+        align-items: center;
+        color: #2F2F2F;
+    }
+
+    .secondSectionBakery .listOne h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 56px;
+        display: flex;
+        align-items: center;
+        color: #2F2F2F;
+    }
+
+    .secondSectionBakery .listOne p {
+        height: 108px;
+        left: 850px;
+        top: 2553px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .btnBakeryTwoDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnBakeryTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 200px;
+        height: 44px;
+        background: #F2A654;
+        border-radius: 100px;
+        border: 0;
+    }
+
+    .btnBakeryTwo a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #2F2F2F;
+    }
+}
+
+/* Media queries products --> lunches */
+@media (min-width:1440px) {
+    .firstSectionLunch {
+        border-bottom: 2px solid rgba(255, 170, 136, 0.4);
+        ;
+    }
+
+    .firstSectionLunch h1 {
+        display: none;
+    }
+
+    .h2LunchMobile {
+        display: none;
+    }
+
+    .h2LunchDesk {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 68px;
+        line-height: 102px;
+        text-align: center;
+        letter-spacing: 0.24em;
+        color: #FDF9F7;
+    }
+
+    .titleSandwiches {
+        width: 100%;
+        height: 312px;
+        background-image: url(../images/lunchesDesktop.png);
+    }
+
+    .containerGridLunchOne {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "h3LunchDesk h3LunchDesk"
+            "listOne imgLunchDesk"
+            "btnLunchDiv btnLunchDiv";
+    }
+
+    .h3LunchDesk {
+        grid-area: h3LunchDesk;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        display: flex;
+        margin-left: 145px;
+        justify-self: baseline;
+        align-self: end;
+        color: #2F2F2F;
+    }
+
+    .containerGridLunchOne .listOne {
+        width: 428px;
+        grid-area: listOne;
+    }
+
+    .imgLunchDesk {
+        grid-area: imgLunchDesk;
+    }
+
+    .btnLunchDiv {
+        grid-area: btnLunchDiv;
+    }
+
+    .containerGridLunchOne .listOne h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 36px;
+        color: #2F2F2F;
+    }
+
+    .containerGridLunchOne .listOne p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        color: #2F2F2F;
+    }
+
+    .btnLunchDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnLunch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 200px;
+        height: 44px;
+        background: #F2A654;
+        border-radius: 100px;
+        border: 0;
+    }
+
+    .btnLunch a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #2F2F2F;
+    }
+
+    .secondSectionLunch {  
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        border: 2px solid rgba(255, 170, 136, 0.4);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        ". ."
+          "imgLunchTwo listTwo"
+          "btnLunchDiv-2 btnLunchDiv-2";
+      }
+      
+      .secondSectionLunch .listTwo { grid-area: listTwo; }
+      
+      .btnLunchDiv-2 { grid-area: btnLunchDiv-2; }
+      
+      .imgLunchTwo { 
+        grid-area: imgLunchTwo; 
+    }
+
+    .h2LunchDesk-2 {
+        display: none;
+    }
+
+    .secondSectionLunch .listTwo h2 {
+        font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 54px;
+display: flex;
+align-items: center;
+color: #2F2F2F;
+    }
+
+    .secondSectionLunch .listTwo h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 36px;
+        color: #2F2F2F; 
+        margin-top: 50px;
+    }
+
+    .secondSectionLunch .listTwo p {
+        margin-bottom: 10px;
+        font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 36px;
+color: #2F2F2F;
+width: 428px
+    }
+
+    .btnLunchDiv-2 .btnLunchTwo {
         display: flex;
 flex-direction: column;
 justify-content: center;
@@ -3196,16 +4119,13 @@ align-items: center;
 padding: 0px;
 gap: 8px;
 width: 200px;
-position: absolute;
 height: 44px;
 background: #F2A654;
 border-radius: 100px;
 border:0;
-top:260%;
+    }
 
-}
-    
-    .btnOrderTwoFavs a {
+    .btnLunchDiv-2 .btnLunchTwo a {
         font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -3215,5 +4135,398 @@ align-items: center;
 text-align: center;
 letter-spacing: 0.1px;
 color: #2F2F2F;
-    } 
+    }
+
+    .thirdSectionLunch {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .thirdSectionLunch {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.3fr;
+        align-items: center;
+        justify-items: center;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+
+          "h2LunchDesktop-3 imgLunchThree"
+          "listThree imgLunchThree"
+          "btnLunchDiv-3 btnLunchDiv-3";
+      }
+      
+      .h2LunchDesktop-3 { 
+        padding-top:150px;
+        grid-area: h2LunchDesktop-3; }
+      
+      .thirdSectionLunch .listThree { 
+        padding-top:50px;
+        grid-area: listThree; }
+      
+      .imgLunchThree { grid-area: imgLunchThree; }
+
+      .btnLunchDiv-3 { 
+        padding-top:90px;
+        grid-area: btnLunchDiv-3; }
+      
+        .btnLunchThree a {
+            font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1px;
+color: #2F2F2F;
+        }
+      
+      
+      .btnLunchThree {
+        display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+width: 200px;
+height: 44px;
+background: #F2A654;
+border-radius: 100px;
+border:0;
+      }
+      .thirdSectionLunch .h2LunchDesktop-3 {
+        font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 54px;
+display: flex;
+align-items: center;
+color: #2F2F2F;
+margin-left:-220px;
+      }
+      
+      .thirdSectionLunch .listThree h3 {
+        font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 36px;
+color: #2F2F2F;
+
+
+      }
+
+      .thirdSectionLunch .listThree p {
+        font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 36px;
+color: #2F2F2F;
+width: 436px
+      }
+      
+}
+
+/* Media queries -> estilos index */
+@media (min-width: 1440px) {
+    .indexCarouselLine {
+        display: none;
+    }
+
+    .carrousel {
+        margin-top: 60px;
+        width: 100%;
+    }
+
+    .conteCarrousel {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .itemCarrousel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .itemCarrouselTarjeta {
+        width: 100%;
+        height: 100%;
+    }
+
+    .divImagenesCarrousel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .divImagenesCarrousel img {
+        padding: 15px;
+    }
+
+
+    .itemCarrouselArrows {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .itemCarrouselArrows > a:hover {
+        cursor: pointer;
+    }
+
+
+    .countPrueba {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .countPrueba a button {
+        margin: 18px;
+        width: 13px;
+        height: 13px;
+        border-radius: 10px;
+        border: 1px solid rgba(217, 217, 217, 1);
+        color: rgba(217, 217, 217, 1);
+    }
+
+    .countPrueba a {
+        font-size: 13px;
+        text-decoration: none;
+        color: rgba(217, 217, 217, 1);
+    }
+
+    
+
+    .countPrueba button:hover {
+        background-color:
+            rgba(242, 166, 84, 1);
+    }
+
+
+    /* Carousel Two */
+
+    .indexCarouselLineTwo {
+        display: none;
+    }
+
+    .carrouselTwo {
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .conteCarrouselTwo {
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+    }
+
+    .itemCarrouselTwo {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .itemCarrouselTarjetaTwo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .divImagenesCarrouselTwo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .divImagenesCarrouselTwo img {
+        padding: 15px;
+    }
+
+
+    .itemCarrouselArrowsTwo {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .itemCarrouselArrowsTwo > a:hover {
+        cursor: pointer;
+    }
+
+
+    .countPruebaTwo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .countPruebaTwo a button {
+        margin: 18px;
+        width: 13px;
+        height: 13px;
+        border-radius: 10px;
+        border: 1px solid rgba(217, 217, 217, 1);
+        color: rgba(217, 217, 217, 1);
+    }
+
+    .countPruebaTwo a {
+        font-size: 13px;
+        text-decoration: none;
+        color: rgba(217, 217, 217, 1);
+    }
+
+    .countPruebaTwo button:hover {
+        background-color:
+            rgba(242, 166, 84, 1);
+    }
+
+    .rectangleCarouselOne {
+        display: none;
+    }
+
+    .rectangleCarouselTwo {
+        display: none;
+    }
+}
+
+/* Media queries -> Estilos order */
+@media (min-width: 1440px){
+    .firstSectionOrder h1 {
+        margin-top: 92px;
+        width: 100%;
+        padding: 0 10px;
+        font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+color: #2F2F2F;
+    }
+    .imagesOrder .imageWhatsapp {
+        background-image: url(../images/imgWhatsappDesk.svg);
+        width: 82.96px;
+        height: 82.96px;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+    
+    .imagesOrder .imagePedidosya {
+        background-image: url(../images/imgPedidosYaDesk.png);
+        width: 290px;
+        height: 65px;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+    
+    .imagesOrder .imageRappi {
+        background-image: url(../images/ImgRappiDesk.png);
+        width: 174px;
+        height: 72px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .imagesOrder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 141px;
+    }
+
+    .secondSectionOrder .sectionTakeAway {
+        background-image: url(../images/Rectangle\ 2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+       align-items: center;
+        margin-top:102px;
+    }
+
+    .secondSectionOrder .sectionTakeAway h2 {
+        font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 36px;
+text-align: center;
+display: flex;
+align-items: center;
+letter-spacing: -0.015em;
+color: #FDF9F7;
+    }
+
+    .secondSectionOrder .sectionTakeAway p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.015em;
+        color: #FDF9F7;
+        text-transform: capitalize;
+    }
+
+    .buttonOrderDiv {
+        display: none;
+    }
+
+    .dividerOrder {
+        display: none;
+    }
+
+    .iconsTakeAway {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        ". ."
+          "iconLocation locationP"
+          "iconTimer timerPOne"
+          "iconDelivery deliveryPOne"
+          ". .";
+      }
+      
+      .iconLocation { grid-area: iconLocation; }
+      
+      .locationP { grid-area: locationP; }
+      
+      .iconTimer { grid-area: iconTimer; }
+      
+      .timerPOne { grid-area: timerPOne; }
+      
+      .iconDelivery { grid-area: iconDelivery; }
+      
+      .deliveryPOne { grid-area: deliveryPOne; }
+      
 }
